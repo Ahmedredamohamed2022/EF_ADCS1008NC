@@ -28,3 +28,14 @@ The EF_ADCS1001NC is a low-power, single-channel CMOS 10-bit analogue-to-digital
   <img src="./doc/_static/fig1.png" width="800" height="400">
 
 *Figure 1. Functional Block Diagram of ADC*
+
+## 4. Pin Configuration and Functions
+
+* Corresponding to the Block Diagram of the EF_ADCS1008NC, each pin name with its function is described in Table 1. 
+
+*Table 1. Pin Configuration*
+
+<img src="./doc/_static/table1.png" width="800" height="250">
+
+<img src="./doc/_static/fig2.png" width="700" height="350">
+
