@@ -60,3 +60,10 @@ The EF_ADCS1001NC is a low-power, single-channel CMOS 10-bit analog-to-digital c
 ## 7. Typical Performance Curves
 
 * The proposed EF_ADCS1001NC has been designed and simulated using open-source tools with SkyWater technology. Herein, [XSCHEM](https://xschem.sourceforge.io/stefan/index.html) is a schematic capture program that provides a graphical method of the electronic schematic circuit, easily. [NGSPICE](http://ngspice.sourceforge.net/download.html) is an open-source spice simulator. It is exploited to simulate and verify the designed circuit. The layout of the EF_ADCS1001NC is implemented using [MAGIC 8.3](http://opencircuitdesign.com/magic/) and for design rule check (DRC) as well. However, [NETGEN](http://opencircuitdesign.com/netgen/) is used for comparing netlists of the layout and schematic, known as layout vs schematic (LVS). [PYTHON](https://www.python.org/) can be integrated with the NGSPICE simulator for data manipulation/analysis of the simulation result.
+
+
+## 8. SAR-ADC Layout
+
+<img src="./doc/_static/layout.png" width="400" height="450">
+
+*Figure 7. EF_ADCS1001NC’s Layout*
