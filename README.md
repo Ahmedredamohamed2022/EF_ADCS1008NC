@@ -67,3 +67,15 @@ The EF_ADCS1001NC is a low-power, single-channel CMOS 10-bit analog-to-digital c
 <img src="./doc/_static/layout.png" width="400" height="450">
 
 *Figure 7. EF_ADCS1001NC’s Layout*
+
+## 10. Downloading the files on your system
+<p>&nbsp;</p>
+
+* The files from this repository can be downloaded and used by the following commands:-
+>`sudo apt install -y git`
+
+
+
+>`git clone https://github.com/efabless/EF_ADCS1001NC.git`
+
+<p>&nbsp;</p>
