@@ -39,3 +39,15 @@ The EF_ADCS1001NC is a low-power, single-channel CMOS 10-bit analogue-to-digital
 
 <img src="./doc/_static/fig2.png" width="700" height="350">
 
+
+## 5. Timing Characteristics
+
+*Table 2. Timing Paramters*
+
+<img src="./doc/_static/tabletime.png" width="800" height="250">
+
+<img src="./doc/_static/timingdiagram.png" width="800" height="300">
+
+*Figure 3. ADC Timing Diagram*
+
+
