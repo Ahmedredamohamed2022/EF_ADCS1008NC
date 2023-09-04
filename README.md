@@ -1,4 +1,4 @@
-# 10-Bit, 80KSPS, SAR ADC Without Controller
+# 10-Bit, XXKSPS, SAR ADC Without Controller
 ## 1. Description
 The EF_ADCS1001NC is a low-power, single-channel CMOS 10-bit analog-to-digital converter with a flexible parallel interface. It has an off-chip SAR controller. The converter is based on a successive approximation register (SAR) architecture with an internal track-and-hold circuit. It can be configured to accept a 2.5 V single-ended input span. The output parallel data is binary and compatible with many common DSP parallel interfaces. The EF_ADCS1001NC operates with a dual power supply; 1.8 V and 3.3 V supply the digital and analog IP blocks, respectively. Normal power consumption reaches XX mW in idle mode. The functional block diagram is presented in Figure 1.
 ## 2. Features
