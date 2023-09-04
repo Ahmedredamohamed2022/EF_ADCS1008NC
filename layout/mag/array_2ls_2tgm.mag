@@ -1,0 +1,42 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1693827120
+<< metal1 >>
+rect -6406 6394 -2791 6588
+rect -6406 6175 -6212 6394
+rect -2985 6105 -2791 6394
+rect -3954 2544 -3776 3558
+rect -520 2238 -328 3574
+rect -6198 666 -5996 874
+rect -2774 686 -2588 888
+rect -4320 364 -2698 552
+<< metal3 >>
+rect -6400 4210 -2104 4454
+rect -5569 937 -1907 1095
+use array_1ls_1tgm  array_1ls_1tgm_0
+timestamp 1693827120
+transform 1 0 -3143 0 1 359
+box 0 0 3070 6017
+use array_1ls_1tgm  array_1ls_1tgm_1
+timestamp 1693827120
+transform 1 0 -6569 0 1 341
+box 0 0 3070 6017
+<< labels >>
+flabel metal1 s -4688 6472 -4622 6502 0 FreeSans 373 0 0 0 vo
+port 1 nsew
+flabel metal1 s -3444 422 -3378 452 0 FreeSans 373 0 0 0 vss
+port 2 nsew
+flabel metal1 s -450 2774 -412 2886 0 FreeSans 373 0 0 0 in0
+port 3 nsew
+flabel metal1 s -3908 3136 -3874 3200 0 FreeSans 373 0 0 0 in1
+port 4 nsew
+flabel metal1 s -6096 684 -6080 688 0 FreeSans 373 0 0 0 l1
+port 5 nsew
+flabel metal3 s -3248 4386 -3242 4408 0 FreeSans 373 0 0 0 vdd3p3
+port 6 nsew
+flabel metal3 s -3338 988 -3318 1004 0 FreeSans 373 0 0 0 vdd1p8
+port 7 nsew
+flabel metal1 s -2730 712 -2728 714 0 FreeSans 373 0 0 0 l0
+port 8 nsew
+<< end >>

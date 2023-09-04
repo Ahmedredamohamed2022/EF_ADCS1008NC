@@ -1,0 +1,129 @@
+** sch_path: /home/ahmedreda/Project/AR_SAR_ADC10Bit/eight_channel/tb/EF_ADCS1008NC_tb.sch
+**.subckt EF_ADCS1008NC_tb
+V11 DATA_0 GND PULSE(0 1.8 500n 5n 5n 1u 2u)
+.save i(v11)
+V6 DATA_1 GND PULSE(0 1.8 500n 5n 5n 2u 4u)
+.save i(v6)
+V7 DATA_2 GND PULSE(0 1.8 500n 5n 5n 4u 8u)
+.save i(v7)
+V2 DVDD GND 1.8
+.save i(v2)
+V4 VDD GND 3.3
+.save i(v4)
+V15 DVSS GND 0
+.save i(v15)
+V16 VSS GND 0
+.save i(v16)
+V3 EN GND 1.8
+.save i(v3)
+V1 VH GND 2.5
+.save i(v1)
+V5 RST GND PWL(0 0 100n 0 200n 1.8 300n 1.8 400n 0)
+.save i(v5)
+V8 DATA_3 GND PULSE(0 1.8 500n 5n 5n 8u 16u)
+.save i(v8)
+V9 DATA_4 GND PULSE(0 1.8 500n 5n 5n 16u 32u)
+.save i(v9)
+V10 DATA_5 GND PULSE(0 1.8 500n 5n 5n 32u 64u)
+.save i(v10)
+V12 DATA_6 GND PULSE(0 1.8 500n 5n 5n 64u 128u)
+.save i(v12)
+V13 DATA_7 GND PULSE(0 1.8 500n 5n 5n 128u 256u)
+.save i(v13)
+V14 DATA_8 GND PULSE(0 1.8 500n 5n 5n 256u 512u)
+.save i(v14)
+V17 DATA_9 GND PULSE(0 1.8 500n 5n 5n 512u 1024u)
+.save i(v17)
+V18 VL GND 0
+.save i(v18)
+V19 B_2 GND 1.8
+.save i(v19)
+V21 HOLD GND 0
+.save i(v21)
+*x1 DATA_0 VDD DATA_1 DVDD DATA_2 DVSS DATA_3 DATA_4 VSS DATA_5 VH DATA_6 DATA_7 VL DATA_8 DATA_9 RST
+*+ EN CMP HOLD VIN_0 B_0 B_1 VIN_1 B_2 VIN_2 VIN_3 VIN_4 VIN_5 VIN_6 VIN_7 EF_ADCS1008NCp
+
+
+*.subckt EF_ADCS1008NCp DATA[0] DATA[1] DATA[2] DATA[3] DATA[4] DATA[5] DATA[6] DATA[7] DATA[8]
+*+ DATA[9] RST EN VDD DVDD DVSS VH VL VSS CMP HOLD B[0] B[1] B[2] VIN[0] VIN[1] VIN[2] VIN[3] VIN[4] VIN[5]
+*+ VIN[6] VIN[7]
+
+*x1 DATA_0 DATA_1 DATA_2 DATA_3 DATA_4 DATA_5 DATA_5 DATA_7 DATA_8 DATA_9 RST EN VDD DVDD DVSS VH VL VSS CMP HOLD B_0 B_1 B_2 
+*+ VIN_0 VIN_1 VIN_2 VIN_3 VIN_4 VIN_5 VIN_6 VIN_7 EF_ADCS1008NC
+
+
+x1 EN HOLD  B_0 B_1 B_2 VIN_7 VIN_5 VIN_2 VIN_1 DATA_9 DATA_6
++ VIN_4 DATA_0 VSS DATA_4 VIN_3 CMP  DATA_3 DATA_7 VIN_6 DATA_5 DATA_8  VIN_0
++ DATA_2 RST DATA_1 VL VH DVSS VDD DVDD EF_ADCS1008NC
+
+*.subckt EF_ADCS1008NC EN HOLD B[0] B[1] B[2] VIN[7] VIN[5] VIN[2] VIN[1] DATA[9] DATA[6]
+*+ VIN[4] DATA[0] VSS DATA[4] VIN[3] CMP DATA[3] DATA[7] VIN[6] DATA[5] DATA[8] VIN[0]
+*+ DATA[2] RST DATA[1] VL VH DVSS VDD DVDD
+
+
+
+V20 B_0 GND 1.8
+.save i(v20)
+V22 B_1 GND 1.8
+.save i(v22)
+V23 VIN_2 GND 2
+.save i(v23)
+V24 VIN_0 GND 2.4
+.save i(v24)
+V25 VIN_1 GND 2.2
+.save i(v25)
+V26 VIN_5 GND 1.4
+.save i(v26)
+V27 VIN_3 GND 1.8
+.save i(v27)
+V28 VIN_4 GND 1.6
+.save i(v28)
+V29 VIN_7 GND 1
+.save i(v29)
+V30 VIN_6 GND 1.2
+.save i(v30)
+**** begin user architecture code
+
+
+**.include /ciic/designs/analog-mixed-signal-blocks/Xschem-schematic/standard-cell-level-shifter-tb/sky130_fd_sc_hvl__lsbuflv2hv_1.spice
+.include /home/ahmedreda/PDK/sky130A/libs.ref/sky130_fd_sc_hvl/spice/sky130_fd_sc_hvl.spice
+.include /home/ahmedreda/PDK/sky130A/libs.ref/sky130_fd_sc_hvl/spice/sky130_fd_sc_hvl__lsbuflv2hv_1.spice
+.include /home/ahmedreda/PDK/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
+.include EF_ADCS1008NC.spice
+
+
+
+
+.lib /home/ahmedreda/PDK/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+
+
+
+
+.option TEMP=27
+.option TNOM=27
+.options savecurrents
+.control
+option INTERP
+set filetpe=ascii
+**set filetype=binary
+set filetype=ascii
+set color0=white
+set color1=black
+set color3=blue
+set xbrushwidth=3
+save all
+op
+tran 100n 50u
+plot rst CMP HOLD VIN_0
+
+let i1_vdd=mag(mean(v4#branch))
+let i2_dvdd=mag(mean(v2#branch))
+print i1_vdd
+print i2_dvdd
+
+.endc
+
+
+
+.GLOBAL GND
+.end

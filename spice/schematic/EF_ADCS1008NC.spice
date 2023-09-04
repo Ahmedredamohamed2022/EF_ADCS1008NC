@@ -1,0 +1,380 @@
+** sch_path: /home/ahmedreda/Project/AR_SAR_ADC10Bit/eight_channel/schematic/EF_ADCS1008NC.sch
+.subckt EF_ADCS1008NC DATA[0] DATA[1] DATA[2] DATA[3] DATA[4] DATA[5] DATA[6] DATA[7] DATA[8]
++ DATA[9] RST EN VDD DVDD DVSS VH VL VSS CMP HOLD B[0] B[1] B[2] VIN[0] VIN[1] VIN[2] VIN[3] VIN[4] VIN[5]
++ VIN[6] VIN[7]
+*.PININFO DATA[0]:I DATA[1]:I DATA[2]:I DATA[3]:I DATA[4]:I DATA[5]:I DATA[6]:I DATA[7]:I DATA[8]:I
+*+ DATA[9]:I RST:I EN:I VDD:B DVDD:B DVSS:B VH:B VL:B VSS:B CMP:I HOLD:I B[0]:I B[1]:I B[2]:I VIN[0]:I VIN[1]:I
+*+ VIN[2]:I VIN[3]:I VIN[4]:I VIN[5]:I VIN[6]:I VIN[7]:I
+x1 DATA[0] DATA[1] DATA[2] DATA[3] DATA[4] DATA[5] DATA[6] DATA[7] DATA[8] DATA[9] VDD DVDD DVSS VSS
++ VH VL OUT RST EN EF_DACSCA1001p
+x2 CMP DVDD DVSS VDD VSS AHOLD OUT EF_R2RVCX
+x3 DVDD DVSS HOLD VDD AHOLD SELVIN EN VSS sample_and_hold
+x4 B[0] VDD VIN[0] B[1] VIN[4] DVDD VIN[1] B[2] VIN[5] DVSS VIN[2] VIN[6] SELVIN VIN[3] VIN[7]
++ EF_AMUX0801p
+.ends
+
+* expanding   symbol:  Project/AR_SAR_ADC/dac_capacitor_array/schematic/EF_DACSCA1001p.sym # of
+*+ pins=19
+** sym_path: /home/ahmedreda/Project/AR_SAR_ADC/dac_capacitor_array/schematic/EF_DACSCA1001p.sym
+** sch_path: /home/ahmedreda/Project/AR_SAR_ADC/dac_capacitor_array/schematic/EF_DACSCA1001p.sch
+.subckt EF_DACSCA1001p SELD0 SELD1 SELD2 SELD3 SELD4 SELD5 SELD6 SELD7 SELD8 SELD9 VDD DVDD DVSS VSS
++ VH VL OUT RST EN
+*.PININFO SELD0:I SELD1:I SELD2:I SELD3:I SELD4:I SELD5:I SELD6:I SELD7:I SELD8:I SELD9:I VDD:B
+*+ DVDD:B DVSS:B VH:B VL:B VSS:B OUT:I RST:I EN:I
+x4 D8 D0 D4 VP1 D9 D5 D1 VP2 D2 D6 VSS D7 D3 EF_BANK_CAP_10
+x3 D0 SELD0 D1 SELD1 SELD2 D2 SELD3 SELD4 D3 SELD5 D4 SELD6 SELD7 D5 SELD8 D6 SELD9 D7 D8 D9 VDD
++ DVDD DVSS VH VL EF_AMUX0201_ARRAY1
+x1 VP1 VP2 VDD DVDD DVSS RST EF_SW_RST
+x2 VDD OUT EN VSS VP2 EF_BUF3V3p
+XC6 VSS VSS sky130_fd_pr__cap_mim_m3_1 W=10 L=10 MF=24 m=24
+.ends
+
+
+* expanding   symbol:  Project/AR_SAR_ADC10Bit/single_channel/comparator_top/xschem/EF_R2RVCX.sym #
+*+ of pins=7
+** sym_path:
+*+ /home/ahmedreda/Project/AR_SAR_ADC10Bit/single_channel/comparator_top/xschem/EF_R2RVCX.sym
+** sch_path:
+*+ /home/ahmedreda/Project/AR_SAR_ADC10Bit/single_channel/comparator_top/xschem/EF_R2RVCX.sch
+.subckt EF_R2RVCX VOUT DVDD DVSS VDD VSS VINP VINM
+*.PININFO VDD:I VOUT:O VSS:I VINP:I VINM:I DVDD:I DVSS:I
+x1 VDD net1 net2 VSS VINP net3 VINM comparator
+x2 VDD VSS net1 net2 comparator_bias
+x3 net3 DVDD DVSS DVSS VDD VDD VOUT sky130_fd_sc_hvl__lsbufhv2lv_1
+.ends
+
+
+* expanding   symbol:
+*+  Project/AR_SAR_ADC10Bit/single_channel/sample_and_hold/xschem/sample_and_hold.sym # of pins=8
+** sym_path:
+*+ /home/ahmedreda/Project/AR_SAR_ADC10Bit/single_channel/sample_and_hold/xschem/sample_and_hold.sym
+** sch_path:
+*+ /home/ahmedreda/Project/AR_SAR_ADC10Bit/single_channel/sample_and_hold/xschem/sample_and_hold.sch
+.subckt sample_and_hold dvdd dvss hold vdd out in ena vss
+*.PININFO vdd:I hold:I in:I vss:I out:O dvdd:I dvss:I ena:I
+XC1 holdval vss sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=80 m=80
+XC2 vss holdval sky130_fd_pr__cap_mim_m3_2 W=5 L=5 MF=80 m=80
+x2 vdd out ena vss holdval follower_amp
+x3 vdd net1 ena vss in follower_amp
+x4 hold dvdd dvss dvss vdd vdd hold3v sky130_fd_sc_hvl__lsbuflv2hv_1
+XD1 dvss hold sky130_fd_pr__diode_pw2nd_05v5 area=1e12 pj=4e6
+x1 hold3v vss holdval net1 vdd balanced_switch
+.ends
+
+
+* expanding   symbol:  Project/AR_SAR_ADC/analog_mux/schematic/EF_AMUX0801p.sym # of pins=15
+** sym_path: /home/ahmedreda/Project/AR_SAR_ADC/analog_mux/schematic/EF_AMUX0801p.sym
+** sch_path: /home/ahmedreda/Project/AR_SAR_ADC/analog_mux/schematic/EF_AMUX0801p.sch
+.subckt EF_AMUX0801p B[0] VDD3V3 VIN[0] B[1] VIN[4] VDD1V8 VIN[1] B[2] VIN[5] VSS VIN[2] VIN[6] VO
++ VIN[3] VIN[7]
+*.PININFO VDD1V8:I VDD3V3:I VSS:I VO:O B[0]:I B[1]:I B[2]:I VIN[0]:I VIN[1]:I VIN[2]:I VIN[3]:I
+*+ VIN[4]:I VIN[5]:I VIN[6]:I VIN[7]:I
+x1 o5l2 VDD1V8 VSS o4l3 o3l4 o2l5 o1l6 o0l7 o6l1 o7l0 B[0] B[1] B[2] decoder3to8
+x2 VO VDD3V3 VDD1V8 VSS o7l0 VIN[0] VIN[1] o6l1 VIN[2] o5l2 VIN[3] o4l3 VIN[4] o3l4 VIN[5] o2l5 o1l6
++ VIN[6] VIN[7] o0l7 array_8ls_8tgxx
+.ends
+
+
+* expanding   symbol:  Project/AR_SAR_ADC/dac_capacitor_array/schematic/EF_BANK_CAP_10.sym # of
+*+ pins=13
+** sym_path: /home/ahmedreda/Project/AR_SAR_ADC/dac_capacitor_array/schematic/EF_BANK_CAP_10.sym
+** sch_path: /home/ahmedreda/Project/AR_SAR_ADC/dac_capacitor_array/schematic/EF_BANK_CAP_10.sch
+.subckt EF_BANK_CAP_10 D8 D0 D4 VP1 D9 D5 D1 VP2 D2 D6 VSS D7 D3
+*.PININFO VP2:I VSS:I D0:I D1:I D2:I D3:I D4:I D5:I D6:I D7:I D8:I D9:I VP1:I
+x4 VP1 VSS D0 D1 D2 D3 D4 EF_LSB_CAP
+x1 D8 D5 D9 VP2 D6 VSS D7 EF_MSB_CAP
+x2 VP1 VP2 VSS EF_SC_CAP
+.ends
+
+
+* expanding   symbol:  Project/AR_SAR_ADC/dac_capacitor_array/schematic/EF_AMUX0201_ARRAY1.sym # of
+*+ pins=25
+** sym_path: /home/ahmedreda/Project/AR_SAR_ADC/dac_capacitor_array/schematic/EF_AMUX0201_ARRAY1.sym
+** sch_path: /home/ahmedreda/Project/AR_SAR_ADC/dac_capacitor_array/schematic/EF_AMUX0201_ARRAY1.sch
+.subckt EF_AMUX0201_ARRAY1 D0 SELD0 D1 SELD1 SELD2 D2 SELD3 SELD4 D3 SELD5 D4 SELD6 SELD7 D5 SELD8
++ D6 SELD9 D7 D8 D9 VDD DVDD DVSS VH VL
+*.PININFO VDD:B DVDD:B DVSS:B VH:B VL:B D0:I D1:I D2:I D3:I D4:I D5:I D6:I D7:I D8:I D9:I SELD0:I
+*+ SELD1:I SELD2:I SELD3:I SELD4:I SELD5:I SELD6:I SELD7:I SELD8:I SELD9:I
+x2 VDD DVDD D0 DVSS VH VL SELD0 EF_AMUX21x
+x1 VDD DVDD D1 DVSS VH VL SELD1 EF_AMUX21x
+x3 VDD DVDD D2 DVSS VH VL SELD2 EF_AMUX21x
+x4 VDD DVDD D3 DVSS VH VL SELD3 EF_AMUX21x
+x5 VDD DVDD D4 DVSS VH VL SELD4 EF_AMUX21x
+x8 VDD DVDD D5 DVSS VH VL SELD5 EF_AMUX21x
+x9 VDD DVDD D6 DVSS VH VL SELD6 EF_AMUX21x
+x10 VDD DVDD D7 DVSS VH VL SELD7 EF_AMUX21x
+x11 VDD DVDD D8 DVSS VH VL SELD8 EF_AMUX21x
+x12 VDD DVDD D9 DVSS VH VL SELD9 EF_AMUX21x
+.ends
+
+
+* expanding   symbol:  Project/AR_SAR_ADC/dac_capacitor_array/schematic/EF_SW_RST.sym # of pins=6
+** sym_path: /home/ahmedreda/Project/AR_SAR_ADC/dac_capacitor_array/schematic/EF_SW_RST.sym
+** sch_path: /home/ahmedreda/Project/AR_SAR_ADC/dac_capacitor_array/schematic/EF_SW_RST.sch
+.subckt EF_SW_RST VP1 VP2 VDD DVDD VSS RST
+*.PININFO VP1:I VP2:I VDD:B DVDD:B VSS:B RST:B
+x4 VDD DVDD VSS RST VP1 VSS tg_lsx
+x13 VDD DVDD VSS RST VP2 VSS tg_lsx
+.ends
+
+
+* expanding   symbol:  Project/AR_SAR_ADC/voltage_follower_amplifier/schematic/EF_BUF3V3p.sym # of
+*+ pins=5
+** sym_path: /home/ahmedreda/Project/AR_SAR_ADC/voltage_follower_amplifier/schematic/EF_BUF3V3p.sym
+** sch_path: /home/ahmedreda/Project/AR_SAR_ADC/voltage_follower_amplifier/schematic/EF_BUF3V3p.sch
+.subckt EF_BUF3V3p VDD OUT EN VSS IN
+*.PININFO IN:I VDD:I VSS:I OUT:O EN:I
+XM4 pdrv1 net1 VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=2 nf=2 m=1
+XM5 VDD net1 net1 VDD sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=2 nf=2 m=1
+XM9 vcomn1 nbias VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=1 nf=1 m=1
+XM10 VSS nbias nbias VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=4 nf=4 m=1
+XR1 net4 VDD VSS sky130_fd_pr__res_xhigh_po_0p35 W=1 L=100 mult=1 m=1
+XM20 OUT pdrv1 VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=200 nf=200 m=1
+XM22 OUT ndrv VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=120 nf=120 m=1
+XM24 pbias nbias VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=1 nf=1 m=1
+XM25 VDD pbias pbias VDD sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=1 nf=1 m=1
+XM26 vcomp pbias VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=2 nf=2 m=1
+XM27 net2 OUT vcomp VDD sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=2 nf=2 m=1
+XM28 vcomp IN ndrv VDD sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=2 nf=2 m=1
+XM29 ndrv net2 VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=1 nf=1 m=1
+XM30 VSS net2 net2 VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=1 nf=1 m=1
+XM1 net1 OUT vcomn1 VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=1 nf=1 m=1
+XM2 vcomn1 IN pdrv1 VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=1 nf=1 m=1
+XM3 pdrv2 net3 VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=2 nf=2 m=1
+XM6 VDD net3 net3 VDD sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=2 nf=2 m=1
+XM7 vcomn2 nbias VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=1 nf=1 m=1
+XM8 net3 OUT vcomn2 VSS sky130_fd_pr__nfet_03v3_nvt L=0.5 W=1 nf=1 m=1
+XM11 vcomn2 IN pdrv2 VSS sky130_fd_pr__nfet_03v3_nvt L=0.5 W=1 nf=1 m=1
+XM12 VDD pdrv2 OUT VDD sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=200 nf=200 m=1
+XD1 VSS IN sky130_fd_pr__diode_pw2nd_05v5 area=1 pj=4e6
+XM13 net4 EN nbias VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=1 nf=1 m=1
+XD2 VSS EN sky130_fd_pr__diode_pw2nd_05v5 area=1 pj=4e6
+.ends
+
+
+* expanding   symbol:  comparator.sym # of pins=7
+** sym_path: /home/ahmedreda/Project/AR_SAR_ADC/voltage_follower_amplifier/schematic/comparator.sym
+** sch_path: /home/ahmedreda/Project/AR_SAR_ADC/voltage_follower_amplifier/schematic/comparator.sch
+.subckt comparator VDD VBP VBN VSS VINP VOUT VINM
+*.PININFO VINP:I VINM:I VBN:I VBP:I VDD:B VSS:B VOUT:O
+XM1 net3 VINM net1 VSS sky130_fd_pr__nfet_g5v0d10v5 L=2 W=5 nf=1 m=4
+XM2 net2 VINP net1 VSS sky130_fd_pr__nfet_g5v0d10v5 L=2 W=5 nf=1 m=4
+XM3 net1 VBN VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=2 W=5 nf=1 m=2
+XM4 net4 net4 VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=2 W=5 nf=1 m=2
+XM5 VOUTANALOG net4 VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=2 W=5 nf=1 m=2
+XM6 net3 net3 VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=2 W=5 nf=1 m=2
+XM7 net2 net2 VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=2 W=5 nf=1 m=2
+XM8 net4 net3 VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=2 W=5 nf=1 m=2
+XM9 VOUTANALOG net2 VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=2 W=5 nf=1 m=2
+XM10 net6 VINM net5 VDD sky130_fd_pr__pfet_g5v0d10v5 L=2 W=5 nf=1 m=4
+XM11 net7 VINP net5 VDD sky130_fd_pr__pfet_g5v0d10v5 L=2 W=5 nf=1 m=4
+XM12 net5 VBP VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=2 W=5 nf=1 m=2
+XM13 net8 net8 VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=2 W=5 nf=1 m=2
+XM14 VOUTANALOG net8 VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=2 W=5 nf=1 m=2
+XM15 net6 net6 VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=2 W=5 nf=1 m=2
+XM16 net7 net7 VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=2 W=5 nf=1 m=2
+XM17 net8 net6 VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=2 W=5 nf=1 m=2
+XM18 VOUTANALOG net7 VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=2 W=5 nf=1 m=2
+XM19 net9 VOUTANALOG VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=2 W=10 nf=1 m=1
+XM20 net9 VOUTANALOG VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=2 W=5 nf=1 m=1
+XM21 VOUT net9 VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=2 W=10 nf=1 m=1
+XM22 VOUT net9 VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=2 W=5 nf=1 m=1
+XM23 net1 VSS VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=2 W=5 nf=1 m=2
+XM24 net5 VDD VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=2 W=5 nf=1 m=2
+XM25 VSS VSS VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=2 W=5 nf=1 m=8
+XM26 VDD VDD VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=2 W=5 nf=1 m=8
+.ends
+
+
+* expanding   symbol:  comparator_bias.sym # of pins=4
+** sym_path:
+*+ /home/ahmedreda/Project/AR_SAR_ADC/voltage_follower_amplifier/schematic/comparator_bias.sym
+** sch_path:
+*+ /home/ahmedreda/Project/AR_SAR_ADC/voltage_follower_amplifier/schematic/comparator_bias.sch
+.subckt comparator_bias VDD VSS VBP VBN
+*.PININFO VBP:O VBN:O VDD:B VSS:B
+XR1 net2 VDD VSS sky130_fd_pr__res_high_po W=1.41 L=141 mult=1 m=1
+XM3 net1 net2 VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=2 W=20 nf=1 m=1
+XM4 VBN net1 net2 VDD sky130_fd_pr__pfet_g5v0d10v5 L=2 W=20 nf=1 m=1
+XM5 VBN VBN net2 VDD sky130_fd_pr__pfet_g5v0d10v5 L=15 W=1 nf=1 m=1
+XM7 VBP VBP VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=2 W=5 nf=1 m=1
+XM1 VBN VBN VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=2 W=5 nf=1 m=1
+XM2 net1 VBN VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=2 W=5 nf=1 m=1
+XM6 VBP VBN VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=2 W=5 nf=1 m=1
+XM8 VBN VSS VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=2 W=5 nf=1 m=1
+XM9 net1 VSS VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=2 W=5 nf=1 m=1
+XM10 VBP VSS VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=2 W=5 nf=1 m=1
+.ends
+
+
+* expanding   symbol:  follower_amp.sym # of pins=5
+** sym_path:
+*+ /home/ahmedreda/Project/AR_SAR_ADC/voltage_follower_amplifier/schematic/follower_amp.sym
+** sch_path:
+*+ /home/ahmedreda/Project/AR_SAR_ADC/voltage_follower_amplifier/schematic/follower_amp.sch
+.subckt follower_amp vdd out ena vss in
+*.PININFO in:I vdd:I vss:I out:O ena:I
+XM4 pdrv1 net1 vdd vdd sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=2 nf=2 m=1
+XM5 vdd net1 net1 vdd sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=2 nf=2 m=1
+XM9 vcomn1 nbias vss vss sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=1 nf=1 m=1
+XM10 vss nbias nbias vss sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=4 nf=4 m=1
+XR1 net4 vdd vss sky130_fd_pr__res_xhigh_po_0p35 W=1 L=100 mult=1 m=1
+XM20 out pdrv1 vdd vdd sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=200 nf=200 m=1
+XM22 out ndrv vss vss sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=120 nf=120 m=1
+XM24 pbias nbias vss vss sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=1 nf=1 m=1
+XM25 vdd pbias pbias vdd sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=1 nf=1 m=1
+XM26 vcomp pbias vdd vdd sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=2 nf=2 m=1
+XM27 net2 out vcomp vdd sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=2 nf=2 m=1
+XM28 vcomp in ndrv vdd sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=2 nf=2 m=1
+XM29 ndrv net2 vss vss sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=1 nf=1 m=1
+XM30 vss net2 net2 vss sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=1 nf=1 m=1
+XM1 net1 out vcomn1 vss sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=1 nf=1 m=1
+XM2 vcomn1 in pdrv1 vss sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=1 nf=1 m=1
+XM3 pdrv2 net3 vdd vdd sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=2 nf=2 m=1
+XM6 vdd net3 net3 vdd sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=2 nf=2 m=1
+XM7 vcomn2 nbias vss vss sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=1 nf=1 m=1
+XM8 net3 out vcomn2 vss sky130_fd_pr__nfet_03v3_nvt L=0.5 W=1 nf=1 m=1
+XM11 vcomn2 in pdrv2 vss sky130_fd_pr__nfet_03v3_nvt L=0.5 W=1 nf=1 m=1
+XM12 vdd pdrv2 out vdd sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=200 nf=200 m=1
+XD1 vss in sky130_fd_pr__diode_pw2nd_05v5 area=1 pj=4e6
+XM13 net4 ena nbias vss sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=1 nf=1 m=1
+XD2 vss ena sky130_fd_pr__diode_pw2nd_05v5 area=1 pj=4e6
+.ends
+
+
+* expanding   symbol:  Project/AR_SAR_ADC/sample_and_hold/xschem/balanced_switch.sym # of pins=5
+** sym_path: /home/ahmedreda/Project/AR_SAR_ADC/sample_and_hold/xschem/balanced_switch.sym
+** sch_path: /home/ahmedreda/Project/AR_SAR_ADC/sample_and_hold/xschem/balanced_switch.sch
+.subckt balanced_switch hold vss out in vdd
+*.PININFO in:I out:O vss:I vdd:I hold:I
+XM1 in holdb out vss sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=4 nf=2 m=1
+XM2 in holdp out vdd sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=10 nf=2 m=1
+XM3 out holdp out vss sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=2 nf=1 m=1
+XM4 out holdb out vdd sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=5 nf=1 m=1
+XM5 in holdp in vss sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=2 nf=1 m=1
+XM6 in holdb in vdd sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=5 nf=1 m=1
+XM7 holdb hold vdd vdd sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=5 nf=1 m=1
+XM8 holdb hold vss vss sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=2 nf=1 m=1
+XM9 holdp holdb vdd vdd sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=5 nf=1 m=1
+XM10 holdp holdb vss vss sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=2 nf=1 m=1
+XD1 vss hold sky130_fd_pr__diode_pw2nd_05v5 area=1 pj=4e6
+.ends
+
+
+* expanding   symbol:  Project/AR_SAR_ADC/analog_mux/schematic/array_8ls_8tgxx.sym # of pins=20
+** sym_path: /home/ahmedreda/Project/AR_SAR_ADC/analog_mux/schematic/array_8ls_8tgxx.sym
+** sch_path: /home/ahmedreda/Project/AR_SAR_ADC/analog_mux/schematic/array_8ls_8tgxx.sch
+.subckt array_8ls_8tgxx vo vdd3p3 vdd1p8 vss l0 in0 in1 l1 in2 l2 in3 l3 in4 l4 in5 l5 l6 in6 in7 l7
+*.PININFO vdd1p8:I vdd3p3:I vss:I l0:I vo:O in0:I l1:I in1:I l2:I in2:I l3:I in3:I l4:I in4:I l5:I
+*+ in5:I l6:I in6:I l7:I in7:I
+x2 vdd3p3 vdd1p8 vss l0 vo in0 array_1ls_1tgx
+x3 vdd3p3 vdd1p8 vss l1 vo in1 array_1ls_1tgx
+x1 vdd3p3 vdd1p8 vss l2 vo in2 array_1ls_1tgx
+x4 vdd3p3 vdd1p8 vss l3 vo in3 array_1ls_1tgx
+x5 vdd3p3 vdd1p8 vss l4 vo in4 array_1ls_1tgx
+x6 vdd3p3 vdd1p8 vss l5 vo in5 array_1ls_1tgx
+x7 vdd3p3 vdd1p8 vss l6 vo in6 array_1ls_1tgx
+x8 vdd3p3 vdd1p8 vss l7 vo in7 array_1ls_1tgx
+.ends
+
+
+* expanding   symbol:  Project/AR_SAR_ADC/dac_capacitor_array/schematic/EF_LSB_CAP.sym # of pins=7
+** sym_path: /home/ahmedreda/Project/AR_SAR_ADC/dac_capacitor_array/schematic/EF_LSB_CAP.sym
+** sch_path: /home/ahmedreda/Project/AR_SAR_ADC/dac_capacitor_array/schematic/EF_LSB_CAP.sch
+.subckt EF_LSB_CAP VP1 VSS D0 D1 D2 D3 D4
+*.PININFO VSS:I D0:I VP1:I D1:I D2:I D3:I D4:I
+XC1 VP1 VSS sky130_fd_pr__cap_mim_m3_1 W=10 L=10 MF=1 m=1
+XC2 VP1 D0 sky130_fd_pr__cap_mim_m3_1 W=10 L=10 MF=1 m=1
+XC3 VP1 D1 sky130_fd_pr__cap_mim_m3_1 W=10 L=10 MF=2 m=2
+XC4 VP1 D2 sky130_fd_pr__cap_mim_m3_1 W=10 L=10 MF=4 m=4
+XC5 VP1 D3 sky130_fd_pr__cap_mim_m3_1 W=10 L=10 MF=8 m=8
+XC7 VP1 D4 sky130_fd_pr__cap_mim_m3_1 W=10 L=10 MF=16 m=16
+XC6 VSS VSS sky130_fd_pr__cap_mim_m3_1 W=10 L=10 MF=32 m=32
+.ends
+
+
+* expanding   symbol:  Project/AR_SAR_ADC/dac_capacitor_array/schematic/EF_MSB_CAP.sym # of pins=7
+** sym_path: /home/ahmedreda/Project/AR_SAR_ADC/dac_capacitor_array/schematic/EF_MSB_CAP.sym
+** sch_path: /home/ahmedreda/Project/AR_SAR_ADC/dac_capacitor_array/schematic/EF_MSB_CAP.sch
+.subckt EF_MSB_CAP D8 D5 D9 VP2 D6 VSS D7
+*.PININFO VP2:I VSS:I D5:I D6:I D7:I D8:I D9:I
+XC8 VP2 D5 sky130_fd_pr__cap_mim_m3_1 W=10 L=10 MF=1 m=1
+XC9 VP2 D6 sky130_fd_pr__cap_mim_m3_1 W=10 L=10 MF=2 m=2
+XC10 VP2 D7 sky130_fd_pr__cap_mim_m3_1 W=10 L=10 MF=4 m=4
+XC11 VP2 D8 sky130_fd_pr__cap_mim_m3_1 W=10 L=10 MF=8 m=8
+XC12 VP2 D9 sky130_fd_pr__cap_mim_m3_1 W=10 L=10 MF=16 m=16
+XC6 VSS VSS sky130_fd_pr__cap_mim_m3_1 W=10 L=10 MF=1 m=1
+XC1 VSS VSS sky130_fd_pr__cap_mim_m3_1 W=10 L=10 MF=32 m=32
+.ends
+
+
+* expanding   symbol:  Project/AR_SAR_ADC/dac_capacitor_array/schematic/EF_SC_CAP.sym # of pins=3
+** sym_path: /home/ahmedreda/Project/AR_SAR_ADC/dac_capacitor_array/schematic/EF_SC_CAP.sym
+** sch_path: /home/ahmedreda/Project/AR_SAR_ADC/dac_capacitor_array/schematic/EF_SC_CAP.sch
+.subckt EF_SC_CAP VP1 VP2 VSS
+*.PININFO VP2:I VSS:I VP1:I
+XC13 VP2 VP1 sky130_fd_pr__cap_mim_m3_1 W=10 L=10 MF=1 m=1
+XC6 VSS VSS sky130_fd_pr__cap_mim_m3_1 W=10 L=10 MF=7 m=7
+.ends
+
+
+* expanding   symbol:  Project/AR_SAR_ADC/comparator_top_02ch/schematic/EF_AMUX21x.sym # of pins=7
+** sym_path: /home/ahmedreda/Project/AR_SAR_ADC/comparator_top_02ch/schematic/EF_AMUX21x.sym
+** sch_path: /home/ahmedreda/Project/AR_SAR_ADC/comparator_top_02ch/schematic/EF_AMUX21x.sch
+.subckt EF_AMUX21x vdd3p3 vdd1p8 vo vss a b sel
+*.PININFO vdd1p8:I vss:I a:I b:I vdd3p3:I sel:I vo:I
+x2 vdd3p3 vdd1p8 vss sel vo a tg_lsx
+x3 vdd3p3 vdd1p8 vss selp vo b tg_lsx
+x11 sel vss vss vdd1p8 vdd1p8 selp sky130_fd_sc_hvl__inv_2
+.ends
+
+
+* expanding   symbol:  Project/AR_SAR_ADC/comparator_top_02ch/schematic/tg_lsx.sym # of pins=6
+** sym_path: /home/ahmedreda/Project/AR_SAR_ADC/comparator_top_02ch/schematic/tg_lsx.sym
+** sch_path: /home/ahmedreda/Project/AR_SAR_ADC/comparator_top_02ch/schematic/tg_lsx.sch
+.subckt tg_lsx vdd3p3 vdd1p8 vss l0 vo in0
+*.PININFO vdd1p8:I vdd3p3:I vss:I l0:I vo:O in0:I
+x9 s0 vss vo in0 vdd3p3 tg4dx
+x1 vdd3p3 vdd1p8 vss s0 l0 array_1lsx
+.ends
+
+
+* expanding   symbol:  Project/AR_SAR_ADC/analog_mux/schematic/array_1ls_1tgx.sym # of pins=6
+** sym_path: /home/ahmedreda/Project/AR_SAR_ADC/analog_mux/schematic/array_1ls_1tgx.sym
+** sch_path: /home/ahmedreda/Project/AR_SAR_ADC/analog_mux/schematic/array_1ls_1tgx.sch
+.subckt array_1ls_1tgx vdd3p3 vdd1p8 vss l0 vo in0
+*.PININFO vdd1p8:I vdd3p3:I vss:I l0:I vo:O in0:I
+x9 s0 vss vo in0 vdd3p3 tg4dx
+x1 vdd3p3 vdd1p8 vss s0 l0 array_1lsx
+.ends
+
+
+* expanding   symbol:  Project/AR_SAR_ADC/analog_mux/schematic/tg4dx.sym # of pins=5
+** sym_path: /home/ahmedreda/Project/AR_SAR_ADC/analog_mux/schematic/tg4dx.sym
+** sch_path: /home/ahmedreda/Project/AR_SAR_ADC/analog_mux/schematic/tg4dx.sch
+.subckt tg4dx hold vss out in vdd
+*.PININFO in:I out:O vss:I vdd:I hold:I
+XM1 in holdb out vss sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=4 nf=2 m=1
+XM2 in holdp out vdd sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=10 nf=2 m=1
+XM3 out holdp out vss sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=2 nf=1 m=1
+XM4 out holdb out vdd sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=5 nf=1 m=1
+XM5 in holdp in vss sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=2 nf=1 m=1
+XM6 in holdb in vdd sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=5 nf=1 m=1
+XM7 holdb hold vdd vdd sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=5 nf=1 m=1
+XM8 holdb hold vss vss sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=2 nf=1 m=1
+XM9 holdp holdb vdd vdd sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=5 nf=1 m=1
+XM10 holdp holdb vss vss sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=2 nf=1 m=1
+XD1 vss hold sky130_fd_pr__diode_pw2nd_05v5 area=1 pj=4e6
+.ends
+
+
+* expanding   symbol:  Project/AR_SAR_ADC/analog_mux/schematic/array_1lsx.sym # of pins=5
+** sym_path: /home/ahmedreda/Project/AR_SAR_ADC/analog_mux/schematic/array_1lsx.sym
+** sch_path: /home/ahmedreda/Project/AR_SAR_ADC/analog_mux/schematic/array_1lsx.sch
+.subckt array_1lsx vdd3p3 vdd1p8 vss1p8 h0 l0
+*.PININFO vdd1p8:I vdd3p3:I vss1p8:I l0:I h0:O
+x5 l0 vdd1p8 vss1p8 vss1p8 vdd3p3 vdd3p3 net1 sky130_fd_sc_hvl__lsbuflv2hv_1
+x11 net1 vss1p8 vss1p8 vdd3p3 vdd3p3 h0 sky130_fd_sc_hvl__inv_2
+.ends
+
+.end
