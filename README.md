@@ -64,7 +64,7 @@ The EF_ADCS1008NC is a low-power,eight-channel CMOS 10-bit analog-to-digital con
 
 ## 8. SAR-ADC Layout
 
-<img src="./doc/_static/layout.png" width="400" height="450">
+<img src="./doc/_static/layout.png" width="800" height="350">
 
 *Figure 7. EF_ADCS1008NC’s Layout*
 
