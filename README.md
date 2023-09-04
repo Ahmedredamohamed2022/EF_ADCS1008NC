@@ -37,7 +37,7 @@ The EF_ADCS1008NC is a low-power,eight-channel CMOS 10-bit analog-to-digital con
 
 <img src="./doc/_static/table1.png" width="800" height="250">
 
-<img src="./doc/_static/fig2.png" width="700" height="350">
+<img src="./doc/_static/fig2.png" width="800" height="350">
 
 
 ## 5. Timing Characteristics
@@ -46,7 +46,7 @@ The EF_ADCS1008NC is a low-power,eight-channel CMOS 10-bit analog-to-digital con
 
 <img src="./doc/_static/tabletime.png" width="800" height="250">
 
-<img src="./doc/_static/timingdiagram.png" width="800" height="300">
+<img src="./doc/_static/timingdigram.png" width="800" height="300">
 
 *Figure 3. ADC Timing Diagram*
 
