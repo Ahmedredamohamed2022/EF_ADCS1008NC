@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1693827120
+timestamp 1694031861
 << metal1 >>
 rect 174 5450 312 5848
 rect 2612 2880 2804 3204
@@ -87,24 +87,24 @@ rect 573 619 2188 627
 rect 52 578 2188 619
 rect 260 576 590 578
 use array_1lsm  array_1lsm_0
-timestamp 1693827120
+timestamp 1694031861
 transform 1 0 -2700 0 1 -202
 box 2700 202 5594 1958
 use array_1tgm  array_1tgm_0
-timestamp 1693827120
+timestamp 1694031861
 transform -1 0 4964 0 1 1876
 box 1896 0 4886 4141
 << labels >>
-flabel metal1 s 2700 3034 2742 3092 0 FreeSans 25 0 0 0 in0
+flabel metal1 s 2700 3034 2742 3092 0 FreeSans 39 0 0 0 in0
 port 1 nsew
-flabel metal1 s 436 344 454 354 0 FreeSans 25 0 0 0 l0
+flabel metal1 s 436 344 454 354 0 FreeSans 39 0 0 0 l0
 port 2 nsew
-flabel metal2 s 108 1912 124 1930 0 FreeSans 20 0 0 0 vss
+flabel metal2 s 108 1912 124 1930 0 FreeSans 31 0 0 0 vss
 port 3 nsew
-flabel metal1 s 238 5604 260 5686 0 FreeSans 20 0 0 0 vo
+flabel metal1 s 238 5604 260 5686 0 FreeSans 31 0 0 0 vo
 port 4 nsew
-flabel metal3 s 104 3936 124 4002 0 FreeSans 20 0 0 0 vdd3p3
+flabel metal3 s 104 3936 124 4002 0 FreeSans 31 0 0 0 vdd3p3
 port 5 nsew
-flabel metal3 s 1020 598 1032 616 0 FreeSans 20 0 0 0 vdd1p8
+flabel metal3 s 1020 598 1032 616 0 FreeSans 31 0 0 0 vdd1p8
 port 6 nsew
 << end >>

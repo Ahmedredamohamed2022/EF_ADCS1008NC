@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1693827120
+timestamp 1694031861
 << nwell >>
 rect -66 377 306 1251
 rect 706 385 1000 1115
@@ -889,37 +889,37 @@ rect 1505 -17 1567 17
 rect 1601 -17 1632 17
 rect 0 -23 1632 -17
 << labels >>
-flabel locali s 703 390 737 424 0 FreeSans 38 0 0 0 X
+flabel locali s 703 390 737 424 0 FreeSans 60 0 0 0 X
 port 1 nsew
-flabel locali s 703 464 737 498 0 FreeSans 38 0 0 0 X
+flabel locali s 703 464 737 498 0 FreeSans 60 0 0 0 X
 port 1 nsew
-flabel locali s 703 538 737 572 0 FreeSans 38 0 0 0 X
+flabel locali s 703 538 737 572 0 FreeSans 60 0 0 0 X
 port 1 nsew
-flabel locali s 703 242 737 276 0 FreeSans 38 0 0 0 X
+flabel locali s 703 242 737 276 0 FreeSans 60 0 0 0 X
 port 1 nsew
-flabel locali s 703 168 737 202 0 FreeSans 38 0 0 0 X
+flabel locali s 703 168 737 202 0 FreeSans 60 0 0 0 X
 port 1 nsew
-flabel locali s 703 316 737 350 0 FreeSans 38 0 0 0 X
+flabel locali s 703 316 737 350 0 FreeSans 60 0 0 0 X
 port 1 nsew
-flabel locali s 223 982 257 1016 0 FreeSans 38 0 0 0 A
+flabel locali s 223 982 257 1016 0 FreeSans 60 0 0 0 A
 port 2 nsew
-flabel locali s 127 982 161 1016 0 FreeSans 38 0 0 0 A
+flabel locali s 127 982 161 1016 0 FreeSans 60 0 0 0 A
 port 2 nsew
-flabel metal1 s 0 51 1632 125 0 FreeSans 38 0 0 0 VGND
+flabel metal1 s 0 51 1632 125 0 FreeSans 60 0 0 0 VGND
 port 3 nsew
-flabel metal1 s 0 1503 1632 1577 0 FreeSans 38 0 0 0 VGND
+flabel metal1 s 0 1503 1632 1577 0 FreeSans 60 0 0 0 VGND
 port 3 nsew
-flabel metal1 s 0 1605 1632 1628 0 FreeSans 38 0 0 0 VNB
+flabel metal1 s 0 1605 1632 1628 0 FreeSans 60 0 0 0 VNB
 port 4 nsew
-flabel metal1 s 0 0 1632 23 0 FreeSans 38 0 0 0 VNB
+flabel metal1 s 0 0 1632 23 0 FreeSans 60 0 0 0 VNB
 port 4 nsew
-flabel metal1 s 14 604 1618 661 0 FreeSans 38 0 0 0 LVPWR
+flabel metal1 s 14 604 1618 661 0 FreeSans 60 0 0 0 LVPWR
 port 5 nsew
-flabel metal1 s 0 791 1632 837 0 FreeSans 38 0 0 0 VPB
+flabel metal1 s 0 791 1632 837 0 FreeSans 60 0 0 0 VPB
 port 6 nsew
-flabel metal1 s 0 865 1632 939 0 FreeSans 23 0 0 0 VPWR
+flabel metal1 s 0 865 1632 939 0 FreeSans 36 0 0 0 VPWR
 port 7 nsew
-flabel metal1 s 0 689 1632 763 0 FreeSans 23 0 0 0 VPWR
+flabel metal1 s 0 689 1632 763 0 FreeSans 36 0 0 0 VPWR
 port 7 nsew
 << properties >>
 string FIXED_BBOX 0 0 1632 1628

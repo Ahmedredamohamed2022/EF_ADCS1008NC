@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1693827120
+timestamp 1694031861
 << nwell >>
 rect 1790 604 2054 660
 << locali >>
@@ -52,18 +52,18 @@ rect -10 -22 15 94
 rect 131 -22 162 94
 rect -10 -54 162 -22
 use sky130_fd_sc_hvl__lsbuflv2hv_1  sky130_fd_sc_hvl__lsbuflv2hv_1_0
-timestamp 1693827120
+timestamp 1694031861
 transform 1 0 0 0 1 0
 box -66 -43 2178 1671
 << labels >>
-flabel metal1 s 358 76 404 96 0 FreeSans 381 0 0 0 vss1p8
+flabel metal1 s 358 76 404 96 0 FreeSans 595 0 0 0 vss1p8
 port 1 nsew
-flabel metal1 s 400 438 418 444 0 FreeSans 381 0 0 0 A
+flabel metal1 s 400 438 418 444 0 FreeSans 595 0 0 0 A
 port 2 nsew
-flabel metal1 s 2194 1266 2202 1282 0 FreeSans 381 0 0 0 X
+flabel metal1 s 2194 1266 2202 1282 0 FreeSans 595 0 0 0 X
 port 3 nsew
-flabel metal1 s 1896 620 1922 640 0 FreeSans 230 0 0 0 vdd1p8
+flabel metal1 s 1896 620 1922 640 0 FreeSans 360 0 0 0 vdd1p8
 port 4 nsew
-flabel metal1 s 210 806 254 826 0 FreeSans 230 0 0 0 vdd3p3
+flabel metal1 s 210 806 254 826 0 FreeSans 360 0 0 0 vdd3p3
 port 5 nsew
 << end >>

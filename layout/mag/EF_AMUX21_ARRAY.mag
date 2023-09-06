@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1693827120
+timestamp 1694031861
 << metal1 >>
 rect -45300 6870 -44812 7100
 rect -38676 6882 -38108 7056
@@ -131,118 +131,118 @@ rect 12570 -777 12594 -633
 rect 12738 -777 12766 -633
 rect 12570 -800 12766 -777
 use EF_AMUX21_ARRAY_m1  EF_AMUX21_ARRAY_m1_0
-timestamp 1693827120
+timestamp 1694031861
 transform 1 0 -33884 0 1 2
 box -14814 -804 19118 7108
 use EF_AMUX21m  EF_AMUX21m_0
-timestamp 1693827120
+timestamp 1694031861
 transform -1 0 -4821 0 1 658
 box 3364 -792 9993 6424
 use EF_AMUX21m  EF_AMUX21m_1
-timestamp 1693827120
+timestamp 1694031861
 transform -1 0 22093 0 1 648
 box 3364 -792 9993 6424
 use EF_AMUX21m  EF_AMUX21m_2
-timestamp 1693827120
+timestamp 1694031861
 transform -1 0 15311 0 1 630
 box 3364 -792 9993 6424
 use EF_AMUX21m  EF_AMUX21m_3
-timestamp 1693827120
+timestamp 1694031861
 transform -1 0 8621 0 1 646
 box 3364 -792 9993 6424
 use EF_AMUX21m  EF_AMUX21m_4
-timestamp 1693827120
+timestamp 1694031861
 transform -1 0 1907 0 1 648
 box 3364 -792 9993 6424
 use via14  via14_0
-timestamp 1693827120
+timestamp 1694031861
 transform 1 0 -872 0 1 2788
 box -14 -4 196 1202
 use via14  via14_1
-timestamp 1693827120
+timestamp 1694031861
 transform 1 0 15930 0 1 2734
 box -14 -4 196 1202
 use via14  via14_2
-timestamp 1693827120
+timestamp 1694031861
 transform 1 0 12586 0 1 2760
 box -14 -4 196 1202
 use via14  via14_3
-timestamp 1693827120
+timestamp 1694031861
 transform 1 0 9164 0 1 2732
 box -14 -4 196 1202
 use via14  via14_4
-timestamp 1693827120
+timestamp 1694031861
 transform 1 0 5820 0 1 2756
 box -14 -4 196 1202
 use via14  via14_5
-timestamp 1693827120
+timestamp 1694031861
 transform 1 0 2446 0 1 2768
 box -14 -4 196 1202
 use via14  via14_6
-timestamp 1693827120
+timestamp 1694031861
 transform 1 0 -14328 0 1 2768
 box -14 -4 196 1202
 use via14  via14_7
-timestamp 1693827120
+timestamp 1694031861
 transform 1 0 -4242 0 1 2766
 box -14 -4 196 1202
 use via14  via14_8
-timestamp 1693827120
+timestamp 1694031861
 transform 1 0 -7594 0 1 2752
 box -14 -4 196 1202
 use via14  via14_9
-timestamp 1693827120
+timestamp 1694031861
 transform 1 0 -10990 0 1 2740
 box -14 -4 196 1202
 << labels >>
-flabel metal1 s 15550 6974 15684 7034 0 FreeSans 655 0 0 0 D0
+flabel metal1 s 15550 6974 15684 7034 0 FreeSans 1024 0 0 0 D0
 port 1 nsew
-flabel metal3 s 18834 4752 18928 4910 0 FreeSans 655 0 0 0 VDD
+flabel metal3 s 18834 4752 18928 4910 0 FreeSans 1024 0 0 0 VDD
 port 2 nsew
-flabel metal1 s 18852 878 18946 1006 0 FreeSans 655 0 0 0 DVSS
+flabel metal1 s 18852 878 18946 1006 0 FreeSans 1024 0 0 0 DVSS
 port 3 nsew
-flabel metal1 s 18488 184 18540 242 0 FreeSans 655 0 0 0 SELD0
+flabel metal1 s 18488 184 18540 242 0 FreeSans 1024 0 0 0 SELD0
 port 4 nsew
-flabel metal3 s 14724 -380 14844 -302 0 FreeSans 655 0 0 0 VH
+flabel metal3 s 14724 -380 14844 -302 0 FreeSans 1024 0 0 0 VH
 port 5 nsew
-flabel metal3 s 13514 -746 13634 -668 0 FreeSans 655 0 0 0 VL
+flabel metal3 s 13514 -746 13634 -668 0 FreeSans 1024 0 0 0 VL
 port 6 nsew
-flabel metal1 s 11018 186 11130 248 0 FreeSans 524 0 0 0 SELD1
+flabel metal1 s 11018 186 11130 248 0 FreeSans 819 0 0 0 SELD1
 port 7 nsew
-flabel metal1 s 8790 6892 8902 7006 0 FreeSans 524 0 0 0 D1
+flabel metal1 s 8790 6892 8902 7006 0 FreeSans 819 0 0 0 D1
 port 8 nsew
-flabel metal3 s 18846 1472 18938 1558 0 FreeSans 524 0 0 0 DVDD
+flabel metal3 s 18846 1472 18938 1558 0 FreeSans 819 0 0 0 DVDD
 port 9 nsew
-flabel metal1 s 2130 6916 2248 7002 0 FreeSans 524 0 0 0 D2
+flabel metal1 s 2130 6916 2248 7002 0 FreeSans 819 0 0 0 D2
 port 10 nsew
-flabel metal1 s 4110 204 4224 282 0 FreeSans 524 0 0 0 SELD2
+flabel metal1 s 4110 204 4224 282 0 FreeSans 819 0 0 0 SELD2
 port 11 nsew
-flabel metal1 s -2706 202 -2662 260 0 FreeSans 524 0 0 0 SELD3
+flabel metal1 s -2706 202 -2662 260 0 FreeSans 819 0 0 0 SELD3
 port 12 nsew
-flabel metal1 s -4570 6916 -4450 7002 0 FreeSans 524 0 0 0 D3
+flabel metal1 s -4570 6916 -4450 7002 0 FreeSans 819 0 0 0 D3
 port 13 nsew
-flabel metal1 s -9664 202 -9522 276 0 FreeSans 524 0 0 0 SELD4
+flabel metal1 s -9664 202 -9522 276 0 FreeSans 819 0 0 0 SELD4
 port 14 nsew
-flabel metal1 s -11158 6926 -11044 7012 0 FreeSans 524 0 0 0 D4
+flabel metal1 s -11158 6926 -11044 7012 0 FreeSans 819 0 0 0 D4
 port 15 nsew
-flabel metal1 s -18318 6940 -18212 6994 0 FreeSans 419 0 0 0 D5
+flabel metal1 s -18318 6940 -18212 6994 0 FreeSans 655 0 0 0 D5
 port 16 nsew
-flabel metal1 s -25066 6892 -24916 6962 0 FreeSans 419 0 0 0 D6
+flabel metal1 s -25066 6892 -24916 6962 0 FreeSans 655 0 0 0 D6
 port 17 nsew
-flabel metal1 s -31648 6876 -31520 6978 0 FreeSans 419 0 0 0 D7
+flabel metal1 s -31648 6876 -31520 6978 0 FreeSans 655 0 0 0 D7
 port 18 nsew
-flabel metal1 s -38554 6902 -38320 6998 0 FreeSans 419 0 0 0 D8
+flabel metal1 s -38554 6902 -38320 6998 0 FreeSans 655 0 0 0 D8
 port 19 nsew
-flabel metal1 s -45162 6930 -44992 7030 0 FreeSans 419 0 0 0 D9
+flabel metal1 s -45162 6930 -44992 7030 0 FreeSans 655 0 0 0 D9
 port 20 nsew
-flabel metal1 s -43776 208 -43584 284 0 FreeSans 419 0 0 0 SELD9
+flabel metal1 s -43776 208 -43584 284 0 FreeSans 655 0 0 0 SELD9
 port 21 nsew
-flabel metal1 s -30170 192 -30000 268 0 FreeSans 210 0 0 0 SELD7
+flabel metal1 s -30170 192 -30000 268 0 FreeSans 329 0 0 0 SELD7
 port 22 nsew
-flabel metal1 s -23414 162 -23322 230 0 FreeSans 210 0 0 0 SELD6
+flabel metal1 s -23414 162 -23322 230 0 FreeSans 329 0 0 0 SELD6
 port 23 nsew
-flabel metal1 s -16810 198 -16714 252 0 FreeSans 210 0 0 0 SELD5
+flabel metal1 s -16810 198 -16714 252 0 FreeSans 329 0 0 0 SELD5
 port 24 nsew
-flabel metal1 s -37126 206 -37040 272 0 FreeSans 210 0 0 0 SELD8
+flabel metal1 s -37126 206 -37040 272 0 FreeSans 329 0 0 0 SELD8
 port 25 nsew
 << end >>

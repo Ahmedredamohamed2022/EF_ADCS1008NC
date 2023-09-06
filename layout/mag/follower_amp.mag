@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1693827120
+timestamp 1694031861
 << dnwell >>
 rect -4467 -3821 2737 6561
 << nwell >>
@@ -11712,122 +11712,122 @@ rect 1573 -3478 2638 -3426
 rect 2690 -3478 2705 -3426
 rect 1573 -3491 2705 -3478
 use sky130_fd_pr__nfet_g5v0d10v5_EJGQJV  M13
-timestamp 1693827120
+timestamp 1694031861
 transform 1 0 1710 0 1 -157
 box -268 -348 268 348
 use sky130_fd_pr__nfet_g5v0d10v5_EJGQJV  M24
-timestamp 1693827120
+timestamp 1694031861
 transform 1 0 1275 0 1 -157
 box -268 -348 268 348
 use sky130_fd_pr__diode_pw2nd_05v5_L93GHW  sky130_fd_pr__diode_pw2nd_05v5_L93GHW_0
-timestamp 1693827120
+timestamp 1694031861
 transform 1 0 -3804 0 1 500
 box -188 -188 188 188
 use sky130_fd_pr__diode_pw2nd_05v5_L93GHW  sky130_fd_pr__diode_pw2nd_05v5_L93GHW_1
-timestamp 1693827120
+timestamp 1694031861
 transform 1 0 -3804 0 1 -100
 box -188 -188 188 188
 use sky130_fd_pr__nfet_03v3_nvt_EJGQJV  sky130_fd_pr__nfet_03v3_nvt_EJGQJV_0
-timestamp 1693827120
+timestamp 1694031861
 transform -1 0 -2671 0 1 -157
 box -268 -348 268 348
 use sky130_fd_pr__pfet_g5v0d10v5_AQ2AJT  sky130_fd_pr__pfet_g5v0d10v5_AQ2AJT_0
-timestamp 1693827120
+timestamp 1694031861
 transform 1 0 -849 0 1 5083
 box -3389 -1269 3389 1269
 use sky130_fd_pr__pfet_g5v0d10v5_AQ2AJT  sky130_fd_pr__pfet_g5v0d10v5_AQ2AJT_1
-timestamp 1693827120
+timestamp 1694031861
 transform 1 0 -849 0 1 2735
 box -3389 -1269 3389 1269
 use sky130_fd_pr__res_xhigh_po_0p35_D7NTZ8  sky130_fd_pr__res_xhigh_po_0p35_D7NTZ8_0
-timestamp 1693827120
+timestamp 1694031861
 transform 0 1 -890 -1 0 -2878
 box -668 -3088 668 3088
 use sky130_fd_pr__nfet_g5v0d10v5_EJGQJV  XM1
-timestamp 1693827120
+timestamp 1694031861
 transform -1 0 -1803 0 1 -157
 box -268 -348 268 348
 use sky130_fd_pr__nfet_g5v0d10v5_EJGQJV  XM2
-timestamp 1693827120
+timestamp 1694031861
 transform -1 0 -1369 0 1 -157
 box -268 -348 268 348
 use sky130_fd_pr__pfet_g5v0d10v5_U62SY6  XM3
-timestamp 1693827120
+timestamp 1694031861
 transform 1 0 -2319 0 1 704
 box -387 -362 387 362
 use sky130_fd_pr__pfet_g5v0d10v5_U62SY6  XM4
-timestamp 1693827120
+timestamp 1694031861
 transform -1 0 -1151 0 1 704
 box -387 -362 387 362
 use sky130_fd_pr__pfet_g5v0d10v5_U62SY6  XM5
-timestamp 1693827120
+timestamp 1694031861
 transform -1 0 -1735 0 1 704
 box -387 -362 387 362
 use sky130_fd_pr__pfet_g5v0d10v5_U62SY6  XM6
-timestamp 1693827120
+timestamp 1694031861
 transform 1 0 -2903 0 1 704
 box -387 -362 387 362
 use sky130_fd_pr__nfet_g5v0d10v5_EJGQJV  XM7
-timestamp 1693827120
+timestamp 1694031861
 transform -1 0 -2237 0 1 -157
 box -268 -348 268 348
 use sky130_fd_pr__nfet_03v3_nvt_EJGQJV  XM8
-timestamp 1693827120
+timestamp 1694031861
 transform -1 0 -3105 0 1 -157
 box -268 -348 268 348
 use sky130_fd_pr__nfet_g5v0d10v5_EJGQJV  XM9
-timestamp 1693827120
+timestamp 1694031861
 transform -1 0 -935 0 1 -157
 box -268 -348 268 348
 use sky130_fd_pr__nfet_g5v0d10v5_H7BQ24  XM10
-timestamp 1693827120
+timestamp 1694031861
 transform 1 0 603 0 1 -158
 box -505 -348 505 348
 use sky130_fd_pr__nfet_g5v0d10v5_UC3VEF  XM22
-timestamp 1693827120
+timestamp 1694031861
 transform 1 0 -865 0 1 -1392
 box -3349 -766 3349 766
 use sky130_fd_pr__pfet_g5v0d10v5_U6NWY6  XM25
-timestamp 1693827120
+timestamp 1694031861
 transform 1 0 1106 0 1 704
 box -308 -362 308 362
 use sky130_fd_pr__pfet_g5v0d10v5_U62SY6  XM26
-timestamp 1693827120
+timestamp 1694031861
 transform 1 0 601 0 1 704
 box -387 -362 387 362
 use sky130_fd_pr__pfet_g5v0d10v5_U62SY6  XM27
-timestamp 1693827120
+timestamp 1694031861
 transform 1 0 17 0 1 704
 box -387 -362 387 362
 use sky130_fd_pr__pfet_g5v0d10v5_U62SY6  XM28
-timestamp 1693827120
+timestamp 1694031861
 transform 1 0 -567 0 1 704
 box -387 -362 387 362
 use sky130_fd_pr__nfet_g5v0d10v5_EJGQJV  XM29
-timestamp 1693827120
+timestamp 1694031861
 transform -1 0 -501 0 1 -157
 box -268 -348 268 348
 use sky130_fd_pr__nfet_g5v0d10v5_EJGQJV  XM30
-timestamp 1693827120
+timestamp 1694031861
 transform -1 0 -67 0 1 -157
 box -268 -348 268 348
 << labels >>
-flabel metal2 s -241 738 -241 738 0 FreeSans 29 0 0 0 vcomp
-flabel metal2 s -3529 -437 -3529 -437 0 FreeSans 29 0 0 0 ndrv
-flabel metal2 s 1374 46 1374 46 0 FreeSans 29 0 0 0 nbias
-flabel metal1 s 980 577 980 577 0 FreeSans 29 0 0 0 pbias
-flabel metal2 s -3326 462 -3326 462 0 FreeSans 29 0 0 0 pdrv2
-flabel metal2 s 1468 463 1468 463 0 FreeSans 29 0 0 0 pdrv1
-flabel metal2 s -2456 -160 -2456 -160 0 FreeSans 29 0 0 0 vcomn2
-flabel metal2 s -1322 -168 -1322 -168 0 FreeSans 29 0 0 0 vcomn1
-flabel metal1 s -4342 1201 -4142 1401 0 FreeSans 23 0 0 0 vdd
+flabel metal2 s -241 738 -241 738 0 FreeSans 45 0 0 0 vcomp
+flabel metal2 s -3529 -437 -3529 -437 0 FreeSans 45 0 0 0 ndrv
+flabel metal2 s 1374 46 1374 46 0 FreeSans 45 0 0 0 nbias
+flabel metal1 s 980 577 980 577 0 FreeSans 45 0 0 0 pbias
+flabel metal2 s -3326 462 -3326 462 0 FreeSans 45 0 0 0 pdrv2
+flabel metal2 s 1468 463 1468 463 0 FreeSans 45 0 0 0 pdrv1
+flabel metal2 s -2456 -160 -2456 -160 0 FreeSans 45 0 0 0 vcomn2
+flabel metal2 s -1322 -168 -1322 -168 0 FreeSans 45 0 0 0 vcomn1
+flabel metal1 s -4342 1201 -4142 1401 0 FreeSans 36 0 0 0 vdd
 port 1 nsew
-flabel metal1 s -4361 589 -4161 789 0 FreeSans 23 0 0 0 in
+flabel metal1 s -4361 589 -4161 789 0 FreeSans 36 0 0 0 in
 port 2 nsew
-flabel metal1 s 2467 163 2667 363 0 FreeSans 23 0 0 0 out
+flabel metal1 s 2467 163 2667 363 0 FreeSans 36 0 0 0 out
 port 3 nsew
-flabel metal1 s -4355 -529 -4155 -329 0 FreeSans 23 0 0 0 vss
+flabel metal1 s -4355 -529 -4155 -329 0 FreeSans 36 0 0 0 vss
 port 4 nsew
-flabel metal1 s -4361 244 -4161 444 0 FreeSans 29 0 0 0 ena
+flabel metal1 s -4361 244 -4161 444 0 FreeSans 45 0 0 0 ena
 port 5 nsew
 << end >>

@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1693827120
+timestamp 1694031861
 << metal1 >>
 rect 3400 7042 27400 7264
 rect 5846 3328 6036 4158
@@ -387,54 +387,54 @@ rect 3548 -1674 37470 -1673
 rect 37614 -1674 37700 -1530
 rect 3548 -1710 37700 -1674
 use array_2ls_2tgm  array_2ls_2tgm_0
-timestamp 1693827120
+timestamp 1694031861
 transform 1 0 30200 0 1 614
 box -6569 341 -73 6588
 use array_2ls_2tgm  array_2ls_2tgm_1
-timestamp 1693827120
+timestamp 1694031861
 transform 1 0 9814 0 1 602
 box -6569 341 -73 6588
 use array_2ls_2tgm  array_2ls_2tgm_2
-timestamp 1693827120
+timestamp 1694031861
 transform 1 0 16598 0 1 620
 box -6569 341 -73 6588
 use array_2ls_2tgm  array_2ls_2tgm_3
-timestamp 1693827120
+timestamp 1694031861
 transform 1 0 23406 0 1 614
 box -6569 341 -73 6588
 use decoder3to8  decoder3to8_0
-timestamp 1693827120
+timestamp 1694031861
 transform 0 1 30335 -1 0 4644
-box -93 439 4049 7249
+box -222 426 4178 7249
 << labels >>
-flabel metal3 s 36912 4658 36938 4706 0 FreeSans 156 0 0 0 B[0]
+flabel metal3 s 36912 4658 36938 4706 0 FreeSans 244 0 0 0 B[0]
 port 1 nsew
-flabel metal3 s 34194 4628 34224 4694 0 FreeSans 156 0 0 0 B[1]
+flabel metal3 s 34194 4628 34224 4694 0 FreeSans 244 0 0 0 B[1]
 port 2 nsew
-flabel metal3 s 31608 4622 31638 4678 0 FreeSans 156 0 0 0 B[2]
+flabel metal3 s 31608 4622 31638 4678 0 FreeSans 244 0 0 0 B[2]
 port 3 nsew
-flabel metal1 s 29726 3630 29782 3680 0 FreeSans 156 0 0 0 VIN[0]
+flabel metal1 s 29726 3630 29782 3680 0 FreeSans 244 0 0 0 VIN[0]
 port 4 nsew
-flabel metal1 s 26288 3812 26350 3888 0 FreeSans 156 0 0 0 VIN[1]
+flabel metal1 s 26288 3812 26350 3888 0 FreeSans 244 0 0 0 VIN[1]
 port 5 nsew
-flabel metal1 s 22926 3674 22990 3732 0 FreeSans 156 0 0 0 VIN[2]
+flabel metal1 s 22926 3674 22990 3732 0 FreeSans 244 0 0 0 VIN[2]
 port 6 nsew
-flabel metal1 s 19532 3790 19590 3872 0 FreeSans 156 0 0 0 VIN[3]
+flabel metal1 s 19532 3790 19590 3872 0 FreeSans 244 0 0 0 VIN[3]
 port 7 nsew
-flabel metal1 s 16138 3730 16206 3796 0 FreeSans 156 0 0 0 VIN[4]
+flabel metal1 s 16138 3730 16206 3796 0 FreeSans 244 0 0 0 VIN[4]
 port 8 nsew
-flabel metal1 s 12700 3668 12754 3760 0 FreeSans 156 0 0 0 VIN[5]
+flabel metal1 s 12700 3668 12754 3760 0 FreeSans 244 0 0 0 VIN[5]
 port 9 nsew
-flabel metal1 s 9350 3712 9414 3750 0 FreeSans 156 0 0 0 VIN[6]
+flabel metal1 s 9350 3712 9414 3750 0 FreeSans 244 0 0 0 VIN[6]
 port 10 nsew
-flabel metal1 s 5904 3630 5980 3710 0 FreeSans 156 0 0 0 VIN[7]
+flabel metal1 s 5904 3630 5980 3710 0 FreeSans 244 0 0 0 VIN[7]
 port 11 nsew
-flabel metal1 s 29856 1044 29902 1098 0 FreeSans 156 0 0 0 VSS
+flabel metal1 s 29856 1044 29902 1098 0 FreeSans 244 0 0 0 VSS
 port 12 nsew
-flabel metal1 s 23200 7078 23258 7160 0 FreeSans 156 0 0 0 VO
+flabel metal1 s 23200 7078 23258 7160 0 FreeSans 244 0 0 0 VO
 port 13 nsew
-flabel metal3 s 12806 4864 12866 4970 0 FreeSans 156 0 0 0 VDD3V3
+flabel metal3 s 12806 4864 12866 4970 0 FreeSans 244 0 0 0 VDD3V3
 port 14 nsew
-flabel metal3 s 23384 1578 23460 1646 0 FreeSans 156 0 0 0 VDD1V8
+flabel metal3 s 23384 1578 23460 1646 0 FreeSans 244 0 0 0 VDD1V8
 port 15 nsew
 << end >>

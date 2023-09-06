@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1693827120
+timestamp 1694031861
 << nwell >>
 rect -38 261 958 582
 << pwell >>
@@ -452,21 +452,21 @@ rect 799 -17 857 17
 rect 891 -17 920 17
 rect 0 -48 920 -17
 << labels >>
-flabel metal1 s 30 -17 64 17 0 FreeSans 906 0 0 0 VGND
+flabel metal1 s 30 -17 64 17 0 FreeSans 1416 0 0 0 VGND
 port 1 nsew
-flabel metal1 s 30 527 64 561 0 FreeSans 906 0 0 0 VPWR
+flabel metal1 s 30 527 64 561 0 FreeSans 1416 0 0 0 VPWR
 port 2 nsew
-flabel nwell s 30 527 64 561 0 FreeSans 906 0 0 0 VPB
+flabel nwell s 30 527 64 561 0 FreeSans 1416 0 0 0 VPB
 port 3 nsew
-flabel pwell s 30 -17 64 17 0 FreeSans 906 0 0 0 VNB
+flabel pwell s 30 -17 64 17 0 FreeSans 1416 0 0 0 VNB
 port 4 nsew
-flabel locali s 857 221 891 255 0 FreeSans 1817 0 0 0 C_N
+flabel locali s 857 221 891 255 0 FreeSans 2839 0 0 0 C_N
 port 5 nsew
-flabel locali s 586 85 620 119 0 FreeSans 1817 0 0 0 Y
+flabel locali s 586 85 620 119 0 FreeSans 2839 0 0 0 Y
 port 6 nsew
-flabel locali s 122 221 156 255 0 FreeSans 1817 0 0 0 A
+flabel locali s 122 221 156 255 0 FreeSans 2839 0 0 0 A
 port 7 nsew
-flabel locali s 306 221 340 255 0 FreeSans 1817 0 0 0 B
+flabel locali s 306 221 340 255 0 FreeSans 2839 0 0 0 B
 port 8 nsew
 << properties >>
 string FIXED_BBOX 0 0 920 544

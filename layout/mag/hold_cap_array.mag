@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1693827120
+timestamp 1694031861
 << metal3 >>
 rect 2013 -17007 3394 -16918
 rect 4122 -17007 6780 -16918
@@ -294,105 +294,105 @@ rect 17142 -26158 17462 -25920
 rect 1997 -26553 19031 -26158
 use sky130_fd_pr__cap_mim_m3_1_VCAG9S  sky130_fd_pr__cap_mim_m3_1_VCAG9S_0
 array 0 0 1381 0 7 1289
-timestamp 1693827120
+timestamp 1694031861
 transform 1 0 18316 0 1 -25341
 box -650 -600 731 701
 use sky130_fd_pr__cap_mim_m3_1_VCAG9S  sky130_fd_pr__cap_mim_m3_1_VCAG9S_1
 array 0 0 -1381 0 7 1289
-timestamp 1693827120
+timestamp 1694031861
 transform -1 0 16288 0 1 -25341
 box -650 -600 731 701
 use sky130_fd_pr__cap_mim_m3_1_VCAG9S  sky130_fd_pr__cap_mim_m3_1_VCAG9S_2
 array 0 0 1381 0 7 1289
-timestamp 1693827120
+timestamp 1694031861
 transform 1 0 14930 0 1 -25341
 box -650 -600 731 701
 use sky130_fd_pr__cap_mim_m3_1_VCAG9S  sky130_fd_pr__cap_mim_m3_1_VCAG9S_3
 array 0 0 -1381 0 7 1289
-timestamp 1693827120
+timestamp 1694031861
 transform -1 0 12902 0 1 -25341
 box -650 -600 731 701
 use sky130_fd_pr__cap_mim_m3_1_VCAG9S  sky130_fd_pr__cap_mim_m3_1_VCAG9S_4
 array 0 0 1381 0 7 1289
-timestamp 1693827120
+timestamp 1694031861
 transform 1 0 11544 0 1 -25341
 box -650 -600 731 701
 use sky130_fd_pr__cap_mim_m3_1_VCAG9S  sky130_fd_pr__cap_mim_m3_1_VCAG9S_5
 array 0 0 -1381 0 7 1289
-timestamp 1693827120
+timestamp 1694031861
 transform -1 0 9516 0 1 -25341
 box -650 -600 731 701
 use sky130_fd_pr__cap_mim_m3_1_VCAG9S  sky130_fd_pr__cap_mim_m3_1_VCAG9S_6
 array 0 0 1381 0 7 1289
-timestamp 1693827120
+timestamp 1694031861
 transform 1 0 8158 0 1 -25341
 box -650 -600 731 701
 use sky130_fd_pr__cap_mim_m3_1_VCAG9S  sky130_fd_pr__cap_mim_m3_1_VCAG9S_7
 array 0 0 -1381 0 7 1289
-timestamp 1693827120
+timestamp 1694031861
 transform -1 0 6130 0 1 -25341
 box -650 -600 731 701
 use sky130_fd_pr__cap_mim_m3_1_VCAG9S  sky130_fd_pr__cap_mim_m3_1_VCAG9S_8
 array 0 0 1381 0 7 1289
-timestamp 1693827120
+timestamp 1694031861
 transform 1 0 4772 0 1 -25341
 box -650 -600 731 701
 use sky130_fd_pr__cap_mim_m3_1_VCAG9S  sky130_fd_pr__cap_mim_m3_1_VCAG9S_9
 array 0 0 -1381 0 7 1289
-timestamp 1693827120
+timestamp 1694031861
 transform -1 0 2744 0 1 -25341
 box -650 -600 731 701
 use sky130_fd_pr__cap_mim_m3_2_VCAE9S  sky130_fd_pr__cap_mim_m3_2_VCAE9S_0
 array 0 0 -1724 0 7 1289
-timestamp 1693827120
+timestamp 1694031861
 transform -1 0 18015 0 1 -25341
 box -851 -601 873 688
 use sky130_fd_pr__cap_mim_m3_2_VCAE9S  sky130_fd_pr__cap_mim_m3_2_VCAE9S_1
 array 0 0 1724 0 7 1289
-timestamp 1693827120
+timestamp 1694031861
 transform 1 0 16589 0 1 -25341
 box -851 -601 873 688
 use sky130_fd_pr__cap_mim_m3_2_VCAE9S  sky130_fd_pr__cap_mim_m3_2_VCAE9S_2
 array 0 0 -1724 0 7 1289
-timestamp 1693827120
+timestamp 1694031861
 transform -1 0 14629 0 1 -25341
 box -851 -601 873 688
 use sky130_fd_pr__cap_mim_m3_2_VCAE9S  sky130_fd_pr__cap_mim_m3_2_VCAE9S_3
 array 0 0 1724 0 7 1289
-timestamp 1693827120
+timestamp 1694031861
 transform 1 0 13203 0 1 -25341
 box -851 -601 873 688
 use sky130_fd_pr__cap_mim_m3_2_VCAE9S  sky130_fd_pr__cap_mim_m3_2_VCAE9S_4
 array 0 0 -1724 0 7 1289
-timestamp 1693827120
+timestamp 1694031861
 transform -1 0 11243 0 1 -25341
 box -851 -601 873 688
 use sky130_fd_pr__cap_mim_m3_2_VCAE9S  sky130_fd_pr__cap_mim_m3_2_VCAE9S_5
 array 0 0 1724 0 7 1289
-timestamp 1693827120
+timestamp 1694031861
 transform 1 0 9817 0 1 -25341
 box -851 -601 873 688
 use sky130_fd_pr__cap_mim_m3_2_VCAE9S  sky130_fd_pr__cap_mim_m3_2_VCAE9S_6
 array 0 0 -1724 0 7 1289
-timestamp 1693827120
+timestamp 1694031861
 transform -1 0 7857 0 1 -25341
 box -851 -601 873 688
 use sky130_fd_pr__cap_mim_m3_2_VCAE9S  sky130_fd_pr__cap_mim_m3_2_VCAE9S_7
 array 0 0 1724 0 7 1289
-timestamp 1693827120
+timestamp 1694031861
 transform 1 0 6431 0 1 -25341
 box -851 -601 873 688
 use sky130_fd_pr__cap_mim_m3_2_VCAE9S  sky130_fd_pr__cap_mim_m3_2_VCAE9S_8
 array 0 0 -1724 0 7 1289
-timestamp 1693827120
+timestamp 1694031861
 transform -1 0 4471 0 1 -25341
 box -851 -601 873 688
 use sky130_fd_pr__cap_mim_m3_2_VCAE9S  XC2
 array 0 0 1724 0 7 1289
-timestamp 1693827120
+timestamp 1694031861
 transform 1 0 3045 0 1 -25341
 box -851 -601 873 688
 << labels >>
-flabel metal4 s 3664 -15423 3664 -15423 0 FreeSans 138 0 0 0 vss
-flabel metal5 s 3731 -26364 3731 -26364 0 FreeSans 138 0 0 0 holdval
+flabel metal4 s 3664 -15423 3664 -15423 0 FreeSans 216 0 0 0 vss
+flabel metal5 s 3731 -26364 3731 -26364 0 FreeSans 216 0 0 0 holdval
 << end >>

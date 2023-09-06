@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1693827120
+timestamp 1694031861
 << dnwell >>
 rect -91 5652 10727 10125
 rect -91 -156 9527 5652
@@ -5770,30 +5770,30 @@ rect 485 5934 2501 5982
 rect 485 5604 1685 5934
 rect 4501 5601 5221 6136
 use comparator  comparator_0
-timestamp 1693827120
+timestamp 1694031861
 transform 1 0 -507679 0 1 -639888
 box 507669 639956 517124 645817
 use comparator_bias  comparator_bias_0
-timestamp 1693827120
+timestamp 1694031861
 transform -1 0 518454 0 1 -639855
 box 507806 646042 518382 649916
 use sky130_fd_sc_hvl__lsbufhv2lv_1  sky130_fd_sc_hvl__lsbufhv2lv_1_0
-timestamp 1693827120
+timestamp 1694031861
 transform 0 1 10050 1 0 3048
 box -66 -43 1698 1671
 << labels >>
-flabel metal2 s -24 2817 314 2917 0 FreeSans 216 0 0 0 VINM
+flabel metal2 s -24 2817 314 2917 0 FreeSans 338 0 0 0 VINM
 port 1 nsew
-flabel metal2 s -24 3052 314 3152 0 FreeSans 216 0 0 0 VINP
+flabel metal2 s -24 3052 314 3152 0 FreeSans 338 0 0 0 VINP
 port 2 nsew
-flabel metal4 s 485 9775 1685 10036 0 FreeSans 216 0 0 0 VDD
+flabel metal4 s 485 9775 1685 10036 0 FreeSans 338 0 0 0 VDD
 port 3 nsew
-flabel metal4 s 2770 9770 3970 10036 0 FreeSans 216 0 0 0 VSS
+flabel metal4 s 2770 9770 3970 10036 0 FreeSans 338 0 0 0 VSS
 port 4 nsew
-flabel metal2 s 11681 4148 11765 4227 0 FreeSans 216 0 0 0 VOUT
+flabel metal2 s 11681 4148 11765 4227 0 FreeSans 338 0 0 0 VOUT
 port 5 nsew
-flabel metal2 s 11277 4905 11712 5410 0 FreeSans 216 0 0 0 DVDD
+flabel metal2 s 11277 4905 11712 5410 0 FreeSans 338 0 0 0 DVDD
 port 6 nsew
-flabel metal2 s 9910 -196 11698 27 0 FreeSans 216 0 0 0 DVSS
+flabel metal2 s 9910 -196 11698 27 0 FreeSans 338 0 0 0 DVSS
 port 7 nsew
 << end >>
