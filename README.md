@@ -1,3 +1,58 @@
+# Overview
+This repo contains a 10-Bit, 8-channel SAR Analog-Digital-Converter without SAR controller titled "EF_ADCS1008NC"
+
+# Prerequisites
+
+*	OS tested: [Linux Ubuntu 64-bit 22.04.1-desktop-amd64](https://ubuntu.com/download/desktop)
+*	[XSCHEM V3.1.0](https://xschem.sourceforge.io/stefan/index.html) is a schematic capture program that provides a graphical method of the electronic schematic circuit, easily.
+*	[NGSPICE-36](http://ngspice.sourceforge.net/download.html) is an open-source spice simulator. It is exploited to simulate and verify the designed circuit.
+*	[MAGIC 8.3.427](http://opencircuitdesign.com/magic/) is for layout implementation and DRC checks as well.
+*	[NETGEN 1.5.245](http://opencircuitdesign.com/netgen/) is used for comparing netlists of the layout and schematic, known as layout vs. schematic (LVS).
+*	[PYTHON 3.10.12](https://www.python.org/) can be integrated with the NGSPICE simulator for data manipulation/analysis of the simulation result.
+
+# Quickstart
+
+1. Clone repo or download via IPM
+
+      * To clone repo
+
+      ```
+      git clone https://github.com/efabless/EF_ADCS1008NC.git
+      ```
+
+      * To download via [IPM](https://github.com/efabless/IPM/blob/main/README.md)
+
+      ```
+      ipm install EF_ADCS1008NC
+      ```
+
+2. Set environment variables
+
+      You need to already have the PDK, you can use [volare](https://github.com/efabless/volare) to download the pdk
+      ```
+      export PDK_ROOT=<path to pdk>
+      ```
+
+3. Run simulation
+
+      To run simulation go to `./verify/spice`, and run these commands
+      ```
+      make verify-<test_bench>-<SIM>
+      ```
+      The `test_bench` is the name of the test bench for example `EF_ADCS1008NC_tb_w_sar_ctrl.spice`, the `SIM` is either `layout` or `schematic`
+      
+      For example:
+      ```
+      make verify-EF_ADCS1008NC_tb_w_sar_ctrl.spice-layout
+      ```
+
+      You can find all test benches that can be ran using this command
+      ```
+      make list
+      ```
+
+      **NOTE: ngspice DOES NOT handle environment variables used in the test benches. the Makefile handles that for you, if you wish to use your own command make sure you manually update the spice files**
+
 # 10-Bit, XXKSPS, SAR ADC Without Controller
 ## 1. Description
 The EF_ADCS1008NC is a low-power,eight-channel CMOS 10-bit analog-to-digital converter with a flexible parallel interface. It has an off-chip SAR controller. The converter is based on a successive approximation register (SAR) architecture with an internal track-and-hold circuit. It can be configured to accept a 2.5 V single-ended input span. The output parallel data is binary and compatible with many common DSP parallel interfaces. The EF_ADCS1008NC operates with a dual power supply; 1.8 V and 3.3 V supply the digital and analog IP blocks, respectively. Normal power consumption reaches XX mW in idle mode. The functional block diagram is presented in Figure 1.
