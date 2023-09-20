@@ -55,7 +55,7 @@ This repo contains a 10-Bit, 8-channel SAR Analog-Digital-Converter without SAR 
 
 # 10-Bit, XXKSPS, SAR ADC Without Controller
 ## 1. Description
-The EF_ADCS1008NC is a low-power,eight-channel CMOS 10-bit analog-to-digital converter with a flexible parallel interface. It has an off-chip SAR controller. The converter is based on a successive approximation register (SAR) architecture with an internal track-and-hold circuit. It can be configured to accept a 2.5 V single-ended input span. The output parallel data is binary and compatible with many common DSP parallel interfaces. The EF_ADCS1008NC operates with a dual power supply; 1.8 V and 3.3 V supply the digital and analog IP blocks, respectively. Normal power consumption reaches XX mW in idle mode. The functional block diagram is presented in Figure 1.
+The EF_ADCS1008NC is a low-power,eight-channel CMOS 10-bit analog-to-digital converter with a flexible parallel interface. It has an off-chip SAR controller. The converter is based on a successive approximation register (SAR) architecture with an internal track-and-hold circuit. It can be configured to accept a 2.5 V single-ended input span. The output parallel data is binary and compatible with many common DSP parallel interfaces. The EF_ADCS1008NC operates with a dual power supply; 1.8 V and 3.3 V supply the digital and analog IP blocks, respectively. The functional block diagram is presented in Figure 1.
 ## 2. Features
 *Input Sinusoidal of XX kHz, Clock Frequency of XMHz, Sampling frequency of XX KHz* 
 
@@ -65,14 +65,7 @@ The EF_ADCS1008NC is a low-power,eight-channel CMOS 10-bit analog-to-digital con
 *  Dual Power Supply With 1.8 V, 3.3 V
 * Track and Hold
 * 2.5 V Eight-Ended Input Span
-* SNR: XX dB 
-* THDb: XX dB 
-* SINAD: XX dB 
-* SFDR: XX dB 
-* ENOB: XX Bits
-* Idle-Power Consumption (CLK is off):
-    - 3.3-V Supply: XX mW (Typical)
-    - 1.8-V Supply:XX nW (Typical)
+
 ## 3. Applications
 
 * Wearable Systems
@@ -101,7 +94,7 @@ The EF_ADCS1008NC is a low-power,eight-channel CMOS 10-bit analog-to-digital con
 
 <img src="./doc/_static/tabletime.png" width="800" height="250">
 
-<img src="./doc/_static/timingdigram.png" width="800" height="300">
+<img src="./doc/_static/timingdiagram.png" width="800" height="300">
 
 *Figure 3. ADC Timing Diagram*
 
