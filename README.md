@@ -123,14 +123,3 @@ The EF_ADCS1008NC is a low-power,eight-channel CMOS 10-bit analog-to-digital con
 
 *Figure 7. EF_ADCS1008NC’s Layout*
 
-## 10. Downloading the files on your system
-<p>&nbsp;</p>
-
-* The files from this repository can be downloaded and used by the following commands:-
->`sudo apt install -y git`
-
-
-
->`git clone https://github.com/efabless/EF_ADCS1008NC.git`
-
-<p>&nbsp;</p>
