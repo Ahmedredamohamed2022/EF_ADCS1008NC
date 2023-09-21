@@ -4,25 +4,28 @@
         "description": "10-Bit Eight_channel_SAR Analog-Digital-Converter",
         "repo": "github.com/efabless/EF_ADCS1008NC",
         "owner": "efabless",
-        "license": "??",
+        "license": "Apache 2.0",
         "author": "Ahmed Reda",
         "email": "ahmed.reda@efabless.com",
         "version": "v1.0.0",
         "date": "9-1-2023",
         "category": "Mixed",
         "tags": [
-            "??"
+            "data converter",
+            "ADC",
+            "SAR",
+            "8 channel"
         ],
         "bus": [
-            "??"
+            "n/a"
         ],
         "type": "hard",
         "status": "verified",
-        "cell_count": "??",
+        "cell_count": "n/a",
         "width": "0.440",
         "height": "0.180",
         "technology": "sky130",
         "clock_freq_mhz": "n/a",
-        "supply_voltage": "3.3V, 1.8V"
+        "supply_voltage": ["3.3V, 1.8V"]
     }
 }
