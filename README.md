@@ -1,6 +1,8 @@
 # Overview
 This repo contains a 10-Bit, 8-channel SAR Analog-Digital-Converter without SAR controller titled "EF_ADCS1008NC"
 
+A custom [digital wrapper](https://github.com/efabless/EF_ADC1008A) is provided for this IP.
+
 # Prerequisites
 
 *	OS tested: [Linux Ubuntu 64-bit 22.04.1-desktop-amd64](https://ubuntu.com/download/desktop)
