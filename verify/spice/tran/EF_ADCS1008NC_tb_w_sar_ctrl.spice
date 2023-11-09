@@ -26,8 +26,10 @@ V22 B_1 GND 1.8
 .save i(v22)
 V23 VIN_2 GND 2
 .save i(v23)
-V24 VIN_0 GND 1.25
+
+V24 VIN_0 GND 1.5
 .save i(v24)
+
 V25 VIN_1 GND 2.2
 .save i(v25)
 V26 VIN_5 GND 1.4
@@ -53,8 +55,19 @@ V41 SOC GND PULSE(1.8 0 6250n 1.5n 1.5n 10u 12u)
 .save i(40)
 
 
-x1 VIN_1 VIN_2 VIN_5 VIN_7 B_0 B_1 B_2 EN HOLD DATA_9 DATA_6 VIN_4 DATA_0 VSS DATA_4 VIN[3] CMP DATA_3 DATA_7 VIN_6 DATA_5 DATA_8 VIN_0 DATA_2 RST DATA_1 VL VH DVSS VDD DVDD EF_ADCS1008NC
-x2 DVSS DVDD CLK CMP RST DATA_0 DATA_1 DATA_2 DATA_3 DATA_4 DATA_5 DATA_6 DATA_7 DATA_8 DATA_9 DVDD EOC RST_N HOLD SOC DVSS DVDD DVSS DVSS sar_ctrl
+*x1 VIN_1 VIN_2 VIN_5 VIN_7 B_0 B_1 B_2 EN HOLD DATA_9 DATA_6 VIN_4 DATA_0 VSS DATA_4 VIN[3] CMP DATA_3 DATA_7 VIN_6 DATA_5 DATA_8 VIN_0 DATA_2
++RST DATA_1 VL VH DVSS VDD DVDD EF_ADCS1008NC
+
+x1 B_0 B_1 B_2 VIN_2 VIN_3 VIN_4 VIN_5 VIN_7 HOLD DATA_5
++ VIN_1 RST VIN_0 CMP DATA_3 DATA_4 DATA_1 DATA_7 DATA_0 VIN_6 VSS DATA_6
++ DATA_2 DATA_9 DATA_8 VL VH DVDD VDD DVSS EN EF_ADCS1008NC
+
+*.subckt EF_ADCS1008NC B[0] B[1] B[2] VIN[2] VIN[3] VIN[4] VIN[5] VIN[7] HOLD DATA[5]
+*+ VIN[1] RST VIN[0] CMP DATA[3] DATA[4] DATA[1] DATA[7] DATA[0] VIN[6] VSS DATA[6]
+*+ DATA[2] DATA[9] DATA[8] VL VH DVDD VDD DVSS EN
+
+
+x2 DVSS DVDD CLK CMP RST DATA_0 DATA_1 DATA_2 DATA_3 DATA_4 DATA_5 DATA_6 DATA_7 DATA_8 DATA_9 DVDD EOC RST_N HOLD SOC DVSS DVDD DVDD DVSS sar_ctrl
 
 **** begin user architecture code
 
@@ -68,15 +81,15 @@ x2 DVSS DVDD CLK CMP RST DATA_0 DATA_1 DATA_2 DATA_3 DATA_4 DATA_5 DATA_6 DATA_7
 
 
 .lib $PDK_ROOT/sky130A/libs.tech/ngspice/sky130.lib.spice tt
-.include ../../spice/$SIM/sar_ctrl.spice
+.include ../../spice/schematic/sar_ctrl.spice
 .include ../../spice/layout/decoder3to8.spice
 
 .include ../../spice/$SIM/EF_ADCS1008NC.spice
 
 
 
-.option TEMP=27
-.option TNOM=27
+.option TEMP=25
+.option TNOM=25
 .options savecurrents
 .control
 option INTERP
@@ -89,7 +102,7 @@ set color3=blue
 set xbrushwidth=3
 save all
 op
-tran 100n 30u
+tran 20n 30u
 plot rst CMP HOLD VIN_0
 
 let i1_vdd=mag(mean(v4#branch))
@@ -97,6 +110,7 @@ let i2_dvdd=mag(mean(v2#branch))
 print i1_vdd
 print i2_dvdd
 plot DATA_0+0.1 DATA_1+0.2 DATA_2+0.3  DATA_3+0.4 DATA_4+0.5 DATA_5+0.6 DATA_6+0.7 DATA_7+0.8 DATA_8+0.9 DATA_9+1 CLK*0.75 HOLD+2 RST+2.5 SOC+3
+plot DATA_0+0.1 DATA_1+0.2 DATA_2+0.3  DATA_3+0.4 DATA_4+0.5 DATA_5+0.6 DATA_6+0.7 DATA_7+0.8 DATA_8+0.9 DATA_9+1 
 
 .endc
 
