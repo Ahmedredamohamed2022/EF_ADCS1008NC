@@ -1,0 +1,54 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1699926577
+<< error_s >>
+rect 4380 644 4432 666
+<< metal1 >>
+rect -3258 10936 2452 11040
+rect -3982 1806 -3884 2000
+rect -612 1810 -514 2004
+rect 2736 1808 2834 2002
+rect 6108 1808 6206 2002
+rect -6378 346 -6112 524
+rect -3004 354 -2738 532
+rect 338 352 604 530
+rect 3714 356 3980 534
+rect -526 0 276 196
+<< metal3 >>
+rect -3449 6684 1229 6802
+rect -3610 606 1224 730
+use array_2ls_2tgwd_2sw  array_2ls_2tgwd_2sw_0
+timestamp 1699926577
+transform 1 0 0 0 1 0
+box 0 -80 6345 11040
+use array_2ls_2tgwd_2sw  array_2ls_2tgwd_2sw_1
+timestamp 1699926577
+transform 1 0 -6720 0 1 0
+box 0 -80 6345 11040
+<< labels >>
+flabel metal1 s -280 58 -178 152 0 FreeSans 16 0 0 0 DVSS
+port 1 nsew
+flabel metal3 s -258 606 -134 730 0 FreeSans 1 0 0 0 DVDD
+port 2 nsew
+flabel metal3 s -248 6684 -130 6802 0 FreeSans 1 0 0 0 VDD
+port 3 nsew
+flabel metal1 s 6108 1808 6206 2002 0 FreeSans 1 0 0 0 VIN_0
+port 4 nsew
+flabel metal1 s 2736 1808 2834 2002 0 FreeSans 1 0 0 0 VIN_1
+port 5 nsew
+flabel metal1 s -612 1810 -514 2004 0 FreeSans 1 0 0 0 VIN_2
+port 6 nsew
+flabel metal1 s -3982 1806 -3884 2000 0 FreeSans 1 0 0 0 VIN_3
+port 7 nsew
+flabel metal1 s -6378 346 -6112 524 0 FreeSans 1 0 0 0 DINL3
+port 8 nsew
+flabel metal1 s -3004 354 -2738 532 0 FreeSans 1 0 0 0 DINL2
+port 9 nsew
+flabel metal1 s 338 352 604 530 0 FreeSans 1 0 0 0 DINL1
+port 10 nsew
+flabel metal1 s 3714 356 3980 534 0 FreeSans 1 0 0 0 DINL0
+port 11 nsew
+flabel metal1 s -86 10936 18 11040 0 FreeSans 1 0 0 0 VO
+port 12 nsew
+<< end >>

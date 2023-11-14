@@ -1,0 +1,79 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1699926577
+<< error_s >>
+rect 11100 644 11152 666
+<< metal1 >>
+rect -392 11040 -288 11044
+rect -3118 10936 550 11040
+rect -10654 1808 -10556 2000
+rect -7282 1816 -7184 2008
+rect -3938 1796 -3840 1988
+rect -564 1810 -466 2002
+rect 2734 1806 2832 1998
+rect 6106 1814 6204 2006
+rect 9450 1804 9548 1996
+rect 12828 1812 12926 2004
+rect -13050 340 -12794 518
+rect -9676 356 -9420 534
+rect -6324 344 -6068 522
+rect -2952 354 -2696 532
+rect 346 352 602 530
+rect 3716 356 3972 534
+rect 7058 350 7314 528
+rect 10438 358 10694 536
+rect -908 2 328 198
+<< metal3 >>
+rect -3413 6684 1181 6802
+rect -3522 606 1316 730
+use array_4ls_4tgwd_4sw  array_4ls_4tgwd_4sw_0
+timestamp 1699926577
+transform 1 0 6720 0 1 0
+box -6720 -80 6345 11040
+use array_4ls_4tgwd_4sw  array_4ls_4tgwd_4sw_1
+timestamp 1699926577
+transform 1 0 -6670 0 1 0
+box -6720 -80 6345 11040
+<< labels >>
+flabel metal1 s -326 38 -218 146 0 FreeSans 16 0 0 0 DVSS
+port 1 nsew
+flabel metal3 s -262 606 -138 730 0 FreeSans 16 0 0 0 DVDD
+port 2 nsew
+flabel metal1 s -392 10940 -288 11044 0 FreeSans 16 0 0 0 VO
+port 3 nsew
+flabel metal3 s -240 6696 -124 6776 0 FreeSans 16 0 0 0 VDD
+port 4 nsew
+flabel metal1 s 12828 1812 12926 2004 0 FreeSans 1 0 0 0 VIN_0
+port 5 nsew
+flabel metal1 s 9450 1804 9548 1996 0 FreeSans 1 0 0 0 VIN_1
+port 6 nsew
+flabel metal1 s 6106 1814 6204 2006 0 FreeSans 1 0 0 0 VIN_2
+port 7 nsew
+flabel metal1 s 2734 1806 2832 1998 0 FreeSans 1 0 0 0 VIN_3
+port 8 nsew
+flabel metal1 s -564 1810 -466 2002 0 FreeSans 1 0 0 0 VIN_4
+port 9 nsew
+flabel metal1 s -3938 1796 -3840 1988 0 FreeSans 1 0 0 0 VIN_5
+port 10 nsew
+flabel metal1 s -7282 1816 -7184 2008 0 FreeSans 1 0 0 0 VIN_6
+port 11 nsew
+flabel metal1 s -10654 1808 -10556 2000 0 FreeSans 1 0 0 0 VIN_7
+port 12 nsew
+flabel metal1 s 10438 358 10694 536 0 FreeSans 1 0 0 0 DINL0
+port 13 nsew
+flabel metal1 s 7058 350 7314 528 0 FreeSans 1 0 0 0 DINL1
+port 14 nsew
+flabel metal1 s 3716 356 3972 534 0 FreeSans 1 0 0 0 DINL2
+port 15 nsew
+flabel metal1 s 346 352 602 530 0 FreeSans 1 0 0 0 DINL3
+port 16 nsew
+flabel metal1 s -2952 354 -2696 532 0 FreeSans 1 0 0 0 DINL4
+port 17 nsew
+flabel metal1 s -6324 344 -6068 522 0 FreeSans 1 0 0 0 DINL5
+port 18 nsew
+flabel metal1 s -9676 356 -9420 534 0 FreeSans 1 0 0 0 DINL6
+port 19 nsew
+flabel metal1 s -13050 340 -12794 518 0 FreeSans 1 0 0 0 DINL7
+port 20 nsew
+<< end >>

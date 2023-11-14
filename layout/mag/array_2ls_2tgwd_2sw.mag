@@ -1,0 +1,48 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1699926577
+<< error_s >>
+rect 4380 644 4432 666
+<< metal1 >>
+rect 322 10936 3796 11040
+rect 322 10632 426 10936
+rect 2854 10934 2980 10936
+rect 322 10148 426 10398
+rect 2738 1808 2828 2004
+rect 6108 1814 6204 1918
+rect 340 344 608 528
+rect 3710 354 3980 530
+rect 2218 0 3500 200
+<< metal3 >>
+rect 848 6780 4187 6802
+rect 710 6692 4187 6780
+rect 848 6684 4187 6692
+rect 1000 606 4380 730
+rect 1002 600 1202 606
+use single_ls_2tgwd_sw  single_ls_2tgwd_sw_0
+timestamp 1699926577
+transform 1 0 0 0 1 0
+box 0 -80 2973 10946
+use single_ls_2tgwd_sw  single_ls_2tgwd_sw_1
+timestamp 1699926577
+transform 1 0 3372 0 1 6
+box 0 -80 2973 10946
+<< labels >>
+flabel metal1 s 2566 50 2600 94 0 FreeSans 1 0 0 0 DVSS
+port 1 nsew
+flabel metal1 s 2854 10934 2980 11036 0 FreeSans 31 0 0 0 VO
+port 2 nsew
+flabel metal3 s 3042 6700 3152 6780 0 FreeSans 16 0 0 0 VDD
+port 3 nsew
+flabel metal3 s 3016 630 3098 706 0 FreeSans 16 0 0 0 DVDD
+port 4 nsew
+flabel metal1 s 6108 1814 6204 1918 0 FreeSans 1 0 0 0 VIN_0
+port 5 nsew
+flabel metal1 s 3710 354 3980 530 0 FreeSans 1 0 0 0 DINL0
+port 6 nsew
+flabel metal1 s 340 344 608 528 0 FreeSans 1 0 0 0 DINL1
+port 7 nsew
+flabel metal1 s 2738 1808 2828 2004 0 FreeSans 1 0 0 0 VIN_1
+port 8 nsew
+<< end >>

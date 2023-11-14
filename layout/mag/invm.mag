@@ -1,0 +1,47 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1699926577
+<< locali >>
+rect 2170 711 2326 726
+rect 2170 677 2191 711
+rect 2225 677 2263 711
+rect 2297 677 2326 711
+rect 2170 664 2326 677
+rect 2488 719 2784 734
+rect 2488 685 2659 719
+rect 2693 685 2731 719
+rect 2765 685 2784 719
+rect 2488 672 2784 685
+<< viali >>
+rect 2191 677 2225 711
+rect 2263 677 2297 711
+rect 2659 685 2693 719
+rect 2731 685 2765 719
+<< metal1 >>
+rect 2236 1042 2718 1188
+rect 2164 711 2448 728
+rect 2164 677 2191 711
+rect 2225 677 2263 711
+rect 2297 677 2448 711
+rect 2164 658 2448 677
+rect 2552 719 2788 734
+rect 2552 685 2659 719
+rect 2693 685 2731 719
+rect 2765 685 2788 719
+rect 2552 672 2788 685
+rect 2210 310 2748 474
+use sky130_fd_sc_hvl__inv_2  sky130_fd_sc_hvl__inv_2_0
+timestamp 1699926577
+transform 1 0 2238 0 1 351
+box -66 -43 546 897
+<< labels >>
+flabel metal1 s 2286 1114 2314 1128 0 FreeSans 25 0 0 0 vdd3p3
+port 1 nsew
+flabel metal1 s 2294 392 2322 406 0 FreeSans 25 0 0 0 vss3p3
+port 2 nsew
+flabel metal1 s 2742 694 2750 704 0 FreeSans 25 0 0 0 Y
+port 3 nsew
+flabel metal1 s 2192 686 2200 696 0 FreeSans 25 0 0 0 A
+port 4 nsew
+<< end >>

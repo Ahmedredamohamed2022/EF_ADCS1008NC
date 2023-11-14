@@ -1,0 +1,36 @@
+magic
+tech sky130A
+timestamp 1699926577
+use sky130_fd_pr__cap_mim_m3_1_STVEUJ  sky130_fd_pr__cap_mim_m3_1_STVEUJ_0
+timestamp 1699926577
+transform -1 0 593 0 1 21050
+box -593 -1170 593 1170
+use sky130_fd_pr__cap_mim_m3_1_STVEUJ  sky130_fd_pr__cap_mim_m3_1_STVEUJ_1
+timestamp 1699926577
+transform -1 0 593 0 1 1170
+box -593 -1170 593 1170
+use sky130_fd_pr__cap_mim_m3_1_STVEUJ  sky130_fd_pr__cap_mim_m3_1_STVEUJ_2
+timestamp 1699926577
+transform -1 0 593 0 1 4010
+box -593 -1170 593 1170
+use sky130_fd_pr__cap_mim_m3_1_STVEUJ  sky130_fd_pr__cap_mim_m3_1_STVEUJ_3
+timestamp 1699926577
+transform -1 0 593 0 1 6850
+box -593 -1170 593 1170
+use sky130_fd_pr__cap_mim_m3_1_STVEUJ  sky130_fd_pr__cap_mim_m3_1_STVEUJ_4
+timestamp 1699926577
+transform -1 0 593 0 1 9690
+box -593 -1170 593 1170
+use sky130_fd_pr__cap_mim_m3_1_STVEUJ  sky130_fd_pr__cap_mim_m3_1_STVEUJ_5
+timestamp 1699926577
+transform -1 0 593 0 1 12530
+box -593 -1170 593 1170
+use sky130_fd_pr__cap_mim_m3_1_STVEUJ  sky130_fd_pr__cap_mim_m3_1_STVEUJ_6
+timestamp 1699926577
+transform -1 0 593 0 1 15370
+box -593 -1170 593 1170
+use sky130_fd_pr__cap_mim_m3_1_STVEUJ  sky130_fd_pr__cap_mim_m3_1_STVEUJ_7
+timestamp 1699926577
+transform -1 0 593 0 1 18210
+box -593 -1170 593 1170
+<< end >>

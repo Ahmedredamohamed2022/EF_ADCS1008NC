@@ -1,0 +1,12 @@
+magic
+tech sky130A
+timestamp 1699926577
+use core1r  core1r_0
+timestamp 1699926577
+transform 1 0 0 0 1 -2840
+box 0 0 23486 2340
+use core1rcs  core1rcs_0
+timestamp 1699926577
+transform 1 0 0 0 1 0
+box 0 0 23486 2340
+<< end >>

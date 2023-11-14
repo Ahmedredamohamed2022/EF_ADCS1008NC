@@ -1,0 +1,36 @@
+magic
+tech sky130A
+timestamp 1699926577
+use sky130_fd_pr__cap_mim_m3_1_NJUQMD  sky130_fd_pr__cap_mim_m3_1_NJUQMD_0
+timestamp 1699926577
+transform -1 0 10243 0 1 1170
+box -1243 -1170 1243 1170
+use sky130_fd_pr__cap_mim_m3_1_NJUQMD  sky130_fd_pr__cap_mim_m3_1_NJUQMD_1
+timestamp 1699926577
+transform -1 0 1243 0 1 1170
+box -1243 -1170 1243 1170
+use sky130_fd_pr__cap_mim_m3_1_NJUQMD  sky130_fd_pr__cap_mim_m3_1_NJUQMD_2
+timestamp 1699926577
+transform -1 0 4243 0 1 1170
+box -1243 -1170 1243 1170
+use sky130_fd_pr__cap_mim_m3_1_NJUQMD  sky130_fd_pr__cap_mim_m3_1_NJUQMD_3
+timestamp 1699926577
+transform -1 0 7243 0 1 1170
+box -1243 -1170 1243 1170
+use sky130_fd_pr__cap_mim_m3_1_NJUQMD  sky130_fd_pr__cap_mim_m3_1_NJUQMD_4
+timestamp 1699926577
+transform -1 0 13243 0 1 1170
+box -1243 -1170 1243 1170
+use sky130_fd_pr__cap_mim_m3_1_NJUQMD  sky130_fd_pr__cap_mim_m3_1_NJUQMD_5
+timestamp 1699926577
+transform -1 0 16243 0 1 1170
+box -1243 -1170 1243 1170
+use sky130_fd_pr__cap_mim_m3_1_NJUQMD  sky130_fd_pr__cap_mim_m3_1_NJUQMD_6
+timestamp 1699926577
+transform -1 0 22243 0 1 1170
+box -1243 -1170 1243 1170
+use sky130_fd_pr__cap_mim_m3_1_NJUQMD  sky130_fd_pr__cap_mim_m3_1_NJUQMD_7
+timestamp 1699926577
+transform -1 0 19243 0 1 1170
+box -1243 -1170 1243 1170
+<< end >>
