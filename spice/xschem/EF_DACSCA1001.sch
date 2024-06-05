@@ -56,9 +56,9 @@ C {devices/lab_pin.sym} 400 -1185 0 1 {name=p59 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 400 -1165 0 1 {name=p62 sig_type=std_logic lab=DVDD}
 C {devices/lab_pin.sym} 400 -1145 0 1 {name=p63 sig_type=std_logic lab=DVSS}
 C {devices/lab_pin.sym} 400 -1125 0 1 {name=p64 sig_type=std_logic lab=RST}
-C {Project/Package_IP/package_EF_ADCS1008NC/EF_ADCS1008NC/spice/xschem/EF_BANK_CAP_10.sym} -160 -1380 0 0 {name=x4}
-C {Project/Package_IP/package_EF_ADCS1008NC/EF_ADCS1008NC/spice/xschem/EF_AMUX0201_ARRAY1.sym} -155 -1010 0 0 {name=x3}
-C {Project/Package_IP/package_EF_ADCS1008NC/EF_ADCS1008NC/spice/xschem/EF_SW_RST.sym} 250 -1155 0 0 {name=x1}
+C {EF_BANK_CAP_10.sym} -160 -1380 0 0 {name=x4}
+C {EF_AMUX0201_ARRAY1.sym} -155 -1010 0 0 {name=x3}
+C {EF_SW_RST.sym} 250 -1155 0 0 {name=x1}
 C {devices/ipin.sym} -495 -1490 0 0 {name=p61 lab=SELD0}
 C {devices/ipin.sym} -495 -1460 0 0 {name=p30 lab=SELD1}
 C {devices/ipin.sym} -495 -1440 0 0 {name=p31 lab=SELD2}
@@ -78,7 +78,7 @@ C {devices/iopin.sym} -570 -1165 0 0 {name=p43 lab=VSS}
 C {devices/ipin.sym} -535 -1060 0 0 {name=p44 lab=OUT}
 C {devices/ipin.sym} -535 -1020 0 0 {name=p46 lab=RST}
 C {devices/ipin.sym} -535 -970 0 0 {name=p50 lab=EN}
-C {Project/Package_IP/package_EF_ADCS1008NC/EF_ADCS1008NC/spice/xschem/EF_BUF3V3p.sym} 695 -1160 0 0 {name=x2}
-C {PDK/sky130A/libs.tech/xschem/sky130_fd_pr/cap_mim_m3_1.sym} 120 -1030 0 0 {name=C6 model=cap_mim_m3_1 W=10 L=10 MF=24 spiceprefix=X}
+C {EF_BUF3V3p.sym} 695 -1160 0 0 {name=x2}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 120 -1030 0 0 {name=C6 model=cap_mim_m3_1 W=10 L=10 MF=24 spiceprefix=X}
 C {devices/lab_pin.sym} 120 -1060 0 0 {name=p40 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 120 -1000 3 0 {name=p51 sig_type=std_logic lab=VSS}

@@ -11,8 +11,8 @@ C {devices/ipin.sym} 1350 -1685 0 0 {name=p4 lab=vss}
 C {devices/ipin.sym} 1305 -1600 0 0 {name=p20 lab=l0}
 C {devices/opin.sym} 1320 -1800 0 0 {name=p28 lab=vo}
 C {devices/ipin.sym} 1375 -1600 0 0 {name=p10 lab=in0}
-C {Project/Package_IP/package_EF_ADCS1008NC/EF_ADCS1008NC/spice/xschem/array_1ls_1tgx.sym} 1740 -1700 0 0 {name=x2}
-C {Project/Package_IP/package_EF_ADCS1008NC/EF_ADCS1008NC/spice/xschem/array_1ls_1tgx.sym} 1740 -1570 0 0 {name=x3}
+C {array_1ls_1tgx.sym} 1740 -1700 0 0 {name=x2}
+C {array_1ls_1tgx.sym} 1740 -1570 0 0 {name=x3}
 C {devices/lab_pin.sym} 1590 -1740 0 0 {name=p13 sig_type=std_logic lab=vdd3p3}
 C {devices/lab_pin.sym} 1590 -1610 0 0 {name=p16 sig_type=std_logic lab=vdd3p3}
 C {devices/lab_pin.sym} 1590 -1720 0 0 {name=p17 sig_type=std_logic lab=vdd1p8}
@@ -27,22 +27,22 @@ C {devices/lab_pin.sym} 1890 -1740 0 1 {name=p26 sig_type=std_logic lab=vo}
 C {devices/lab_pin.sym} 1890 -1610 0 1 {name=p27 sig_type=std_logic lab=vo}
 C {devices/ipin.sym} 1305 -1570 0 0 {name=p29 lab=l1}
 C {devices/ipin.sym} 1375 -1580 0 0 {name=p30 lab=in1}
-C {Project/Package_IP/package_EF_ADCS1008NC/EF_ADCS1008NC/spice/xschem/array_1ls_1tgx.sym} 1740 -1430 0 0 {name=x1}
+C {array_1ls_1tgx.sym} 1740 -1430 0 0 {name=x1}
 C {devices/lab_pin.sym} 1590 -1470 0 0 {name=p1 sig_type=std_logic lab=vdd3p3}
 C {devices/lab_pin.sym} 1590 -1450 0 0 {name=p2 sig_type=std_logic lab=vdd1p8}
 C {devices/lab_pin.sym} 1590 -1430 0 0 {name=p3 sig_type=std_logic lab=vss}
 C {devices/lab_pin.sym} 1590 -1410 0 0 {name=p7 sig_type=std_logic lab=l2}
 C {devices/lab_pin.sym} 1590 -1390 0 0 {name=p8 sig_type=std_logic lab=in2}
 C {devices/lab_pin.sym} 1890 -1470 0 1 {name=p9 sig_type=std_logic lab=vo}
-C {Project/Package_IP/package_EF_ADCS1008NC/EF_ADCS1008NC/spice/xschem/array_1ls_1tgx.sym} 1740 -1280 0 0 {name=x4}
+C {array_1ls_1tgx.sym} 1740 -1280 0 0 {name=x4}
 C {devices/lab_pin.sym} 1590 -1320 0 0 {name=p11 sig_type=std_logic lab=vdd3p3}
 C {devices/lab_pin.sym} 1590 -1300 0 0 {name=p12 sig_type=std_logic lab=vdd1p8}
 C {devices/lab_pin.sym} 1590 -1280 0 0 {name=p14 sig_type=std_logic lab=vss}
 C {devices/lab_pin.sym} 1590 -1260 0 0 {name=p15 sig_type=std_logic lab=l3}
 C {devices/lab_pin.sym} 1590 -1240 0 0 {name=p31 sig_type=std_logic lab=in3}
 C {devices/lab_pin.sym} 1890 -1320 0 1 {name=p32 sig_type=std_logic lab=vo}
-C {Project/Package_IP/package_EF_ADCS1008NC/EF_ADCS1008NC/spice/xschem/array_1ls_1tgx.sym} 2290 -1710 0 0 {name=x5}
-C {Project/Package_IP/package_EF_ADCS1008NC/EF_ADCS1008NC/spice/xschem/array_1ls_1tgx.sym} 2290 -1580 0 0 {name=x6}
+C {array_1ls_1tgx.sym} 2290 -1710 0 0 {name=x5}
+C {array_1ls_1tgx.sym} 2290 -1580 0 0 {name=x6}
 C {devices/lab_pin.sym} 2140 -1750 0 0 {name=p33 sig_type=std_logic lab=vdd3p3}
 C {devices/lab_pin.sym} 2140 -1620 0 0 {name=p34 sig_type=std_logic lab=vdd3p3}
 C {devices/lab_pin.sym} 2140 -1730 0 0 {name=p35 sig_type=std_logic lab=vdd1p8}
@@ -55,14 +55,14 @@ C {devices/lab_pin.sym} 2140 -1670 0 0 {name=p41 sig_type=std_logic lab=in4}
 C {devices/lab_pin.sym} 2140 -1540 0 0 {name=p42 sig_type=std_logic lab=in5}
 C {devices/lab_pin.sym} 2440 -1750 0 1 {name=p43 sig_type=std_logic lab=vo}
 C {devices/lab_pin.sym} 2440 -1620 0 1 {name=p44 sig_type=std_logic lab=vo}
-C {Project/Package_IP/package_EF_ADCS1008NC/EF_ADCS1008NC/spice/xschem/array_1ls_1tgx.sym} 2290 -1440 0 0 {name=x7}
+C {array_1ls_1tgx.sym} 2290 -1440 0 0 {name=x7}
 C {devices/lab_pin.sym} 2140 -1480 0 0 {name=p45 sig_type=std_logic lab=vdd3p3}
 C {devices/lab_pin.sym} 2140 -1460 0 0 {name=p46 sig_type=std_logic lab=vdd1p8}
 C {devices/lab_pin.sym} 2140 -1440 0 0 {name=p47 sig_type=std_logic lab=vss}
 C {devices/lab_pin.sym} 2140 -1420 0 0 {name=p48 sig_type=std_logic lab=l6}
 C {devices/lab_pin.sym} 2140 -1400 0 0 {name=p49 sig_type=std_logic lab=in6}
 C {devices/lab_pin.sym} 2440 -1480 0 1 {name=p50 sig_type=std_logic lab=vo}
-C {Project/Package_IP/package_EF_ADCS1008NC/EF_ADCS1008NC/spice/xschem/array_1ls_1tgx.sym} 2290 -1290 0 0 {name=x8}
+C {array_1ls_1tgx.sym} 2290 -1290 0 0 {name=x8}
 C {devices/lab_pin.sym} 2140 -1330 0 0 {name=p51 sig_type=std_logic lab=vdd3p3}
 C {devices/lab_pin.sym} 2140 -1310 0 0 {name=p52 sig_type=std_logic lab=vdd1p8}
 C {devices/lab_pin.sym} 2140 -1290 0 0 {name=p53 sig_type=std_logic lab=vss}

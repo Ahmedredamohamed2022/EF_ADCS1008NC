@@ -5,7 +5,7 @@ K {}
 V {}
 S {}
 E {}
-C {Project/Package_IP/package_EF_ADCS1008NC/EF_ADCS1008NC/spice/xschem/EF_DACSCA1001.sym} -170 -1150 0 0 {name=x1}
+C {EF_DACSCA1001.sym} -170 -1150 0 0 {name=x1}
 C {devices/lab_pin.sym} -320 -1030 0 0 {name=p1 sig_type=std_logic lab=EN}
 C {devices/lab_pin.sym} -320 -1050 0 0 {name=p2 sig_type=std_logic lab=RST}
 C {devices/lab_pin.sym} -320 -1070 0 0 {name=p3 sig_type=std_logic lab=OUT}
@@ -25,14 +25,14 @@ C {devices/lab_pin.sym} -320 -1130 0 0 {name=p16 sig_type=std_logic lab=DATA[7]}
 C {devices/lab_pin.sym} -320 -1110 0 0 {name=p17 sig_type=std_logic lab=DATA[8]}
 C {devices/lab_pin.sym} -320 -1090 0 0 {name=p18 sig_type=std_logic lab=DATA[9]}
 C {devices/lab_pin.sym} -320 -1270 0 0 {name=p19 sig_type=std_logic lab=DATA[0]}
-C {Project/Package_IP/package_EF_ADCS1008NC/EF_ADCS1008NC/spice/xschem/EF_R2RVC.sym} -180 -830 0 0 {name=x2}
+C {EF_R2RVC.sym} -180 -830 0 0 {name=x2}
 C {devices/lab_pin.sym} -330 -880 0 0 {name=p20 sig_type=std_logic lab=DVDD}
 C {devices/lab_pin.sym} -330 -860 0 0 {name=p21 sig_type=std_logic lab=DVSS}
 C {devices/lab_pin.sym} -330 -840 0 0 {name=p22 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} -330 -820 0 0 {name=p23 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} -330 -780 0 0 {name=p24 sig_type=std_logic lab=OUT}
 C {devices/lab_pin.sym} -30 -880 0 1 {name=p25 sig_type=std_logic lab=CMP}
-C {Project/Package_IP/package_EF_ADCS1008NC/EF_ADCS1008NC/spice/xschem/sample_and_hold.sym} -190 -625 0 0 {name=x3}
+C {sample_and_hold.sym} -190 -625 0 0 {name=x3}
 C {devices/lab_pin.sym} -340 -685 0 0 {name=p28 sig_type=std_logic lab=DVDD}
 C {devices/lab_pin.sym} -340 -665 0 0 {name=p29 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} -340 -645 0 0 {name=p35 sig_type=std_logic lab=HOLD}
@@ -62,7 +62,7 @@ C {devices/iopin.sym} 95 -1185 0 0 {name=p46 lab=VSS}
 C {devices/ipin.sym} -555 -935 0 0 {name=p47 lab=CMP}
 C {devices/lab_pin.sym} -330 -800 0 0 {name=p27 sig_type=std_logic lab=AHOLD}
 C {devices/ipin.sym} -550 -840 0 0 {name=p49 lab=HOLD}
-C {Project/Package_IP/package_EF_ADCS1008NC/EF_ADCS1008NC/spice/xschem/EF_AMUX0801.sym} -660 -550 0 0 {name=x4}
+C {EF_AMUX0801.sym} -660 -550 0 0 {name=x4}
 C {devices/lab_pin.sym} -510 -680 0 1 {name=p37 sig_type=std_logic lab=SELVIN}
 C {devices/lab_pin.sym} -810 -660 0 0 {name=p51 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} -810 -580 0 0 {name=p52 sig_type=std_logic lab=DVDD}

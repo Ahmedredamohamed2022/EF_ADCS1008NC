@@ -35,6 +35,6 @@ C {devices/lab_pin.sym} 1065 -510 0 0 {name=p17 sig_type=std_logic lab=D7}
 C {devices/lab_pin.sym} 1065 -730 0 0 {name=p18 sig_type=std_logic lab=VP1}
 C {devices/lab_pin.sym} 1065 -710 0 0 {name=p29 sig_type=std_logic lab=VP2}
 C {devices/lab_pin.sym} 1065 -690 0 0 {name=p30 sig_type=std_logic lab=VSS}
-C {Project/Package_IP/package_EF_ADCS1008NC/EF_ADCS1008NC/spice/xschem/EF_LSB_CAP.sym} 1245 -840 0 0 {name=x4}
-C {Project/Package_IP/package_EF_ADCS1008NC/EF_ADCS1008NC/spice/xschem/EF_MSB_CAP.sym} 1215 -570 0 0 {name=x1}
-C {Project/Package_IP/package_EF_ADCS1008NC/EF_ADCS1008NC/spice/xschem/EF_SC_CAP.sym} 1215 -710 0 0 {name=x2}
+C {EF_LSB_CAP.sym} 1245 -840 0 0 {name=x4}
+C {EF_MSB_CAP.sym} 1215 -570 0 0 {name=x1}
+C {EF_SC_CAP.sym} 1215 -710 0 0 {name=x2}

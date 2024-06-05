@@ -101,8 +101,8 @@ C {devices/ipin.sym} 260 -1310 0 0 {name=p2 lab=hold}
 C {devices/ipin.sym} 260 -1140 0 0 {name=p3 lab=in}
 C {devices/ipin.sym} 260 -1070 0 0 {name=p4 lab=vss}
 C {devices/opin.sym} 1750 -1220 0 0 {name=p5 lab=out}
-C {Project/Package_IP/package_EF_ADCS1008NC/EF_ADCS1008NC/spice/xschem/follower_amp.sym} 1510 -1190 0 0 {name=x2}
-C {Project/Package_IP/package_EF_ADCS1008NC/EF_ADCS1008NC/spice/xschem/follower_amp.sym} 470 -1130 0 0 {name=x3}
+C {follower_amp.sym} 1510 -1190 0 0 {name=x2}
+C {follower_amp.sym} 470 -1130 0 0 {name=x3}
 C {lsbuflv2hv_1.sym} 440 -1310 0 0 {name=x4 LVPWR=dvdd VGND=dvss VNB=dvss VPB=vdd VPWR=vdd prefix=sky130_fd_sc_hvl__ }
 C {devices/ipin.sym} 260 -1440 0 0 {name=p6 lab=dvdd}
 C {devices/lab_pin.sym} 320 -1440 0 0 {name=l1 sig_type=std_logic lab=dvdd}
@@ -116,4 +116,4 @@ area=1e12
 }
 C {devices/ipin.sym} 260 -1120 0 0 {name=p8 lab=ena}
 C {devices/lab_pin.sym} 1340 -1180 0 0 {name=l5 sig_type=std_logic lab=ena}
-C {Project/Package_IP/package_EF_ADCS1008NC/EF_ADCS1008NC/spice/xschem/balanced_switch.sym} 840 -1170 0 0 {name=x1}
+C {balanced_switch.sym} 840 -1170 0 0 {name=x1}

@@ -5,7 +5,7 @@ K {}
 V {}
 S {}
 E {}
-C {Project/Package_IP/package_EF_ADCS1008NC/EF_ADCS1008NC/spice/xschem/decoder3to8.sym} 543.75 -257.5 0 0 {name=x1}
+C {decoder3to8.sym} 543.75 -257.5 0 0 {name=x1}
 C {devices/lab_pin.sym} 493.75 -347.5 0 0 {name=p14 sig_type=std_logic lab=B[0]}
 C {devices/lab_pin.sym} 493.75 -387.5 0 0 {name=p15 sig_type=std_logic lab=B[2]}
 C {devices/lab_pin.sym} 493.75 -367.5 0 0 {name=p16 sig_type=std_logic lab=B[1]}
@@ -26,7 +26,7 @@ C {devices/ipin.sym} 335 -654.375 0 0 {name=p64 lab=VIN[4]}
 C {devices/ipin.sym} 335 -614.375 0 0 {name=p65 lab=VIN[5]}
 C {devices/ipin.sym} 335 -574.375 0 0 {name=p66 lab=VIN[6]}
 C {devices/ipin.sym} 335 -534.375 0 0 {name=p67 lab=VIN[7]}
-C {Project/Package_IP/package_EF_ADCS1008NC/EF_ADCS1008NC/spice/xschem/array_8ls_8tgxx.sym} 962.5 -397.5 0 0 {name=x2}
+C {array_8ls_8tgxx.sym} 962.5 -397.5 0 0 {name=x2}
 C {devices/lab_pin.sym} 1112.5 -577.5 0 1 {name=p9 sig_type=std_logic lab=VO}
 C {devices/lab_pin.sym} 812.5 -577.5 0 0 {name=p19 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 812.5 -557.5 0 0 {name=p22 sig_type=std_logic lab=DVDD}
